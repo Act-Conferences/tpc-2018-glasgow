@@ -5,7 +5,7 @@ body {
 	margin: 0pt auto;
 }
 
-h1.subtitle {
+h1.title {
 	background-color: rgba(255, 255, 255, .2);
 	background-image: url(css/logos/conf-logo.png);
 	background-position: top right;
@@ -16,7 +16,7 @@ h1.subtitle {
 
 #wrapper {
 	margin: 0pt auto;
-	width: 90%;
+	width: 98%;
 }
 
 #header {
