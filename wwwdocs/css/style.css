@@ -5,16 +5,24 @@ body {
 	margin: 0pt auto;
 }
 
+
+/* LAYOUT SECTIONS */
+
 #wrapper {
 	margin: 0pt auto;
-	width: 850px;
+	width: 90%;
+}
+
+#header {
+	background-color: rgba(60, 60, 100, 1);
 }
 
 #menu {
 	float: left;
-	font-size: 90%;
-	width: 150px;
+	width: 30%;
+	background-color: rgba(255, 0, 0, 1);
 }
+
 
 #menu h2 {
 	font-size: 110%;
@@ -25,13 +33,29 @@ body {
     list-style-type: none;
 }
 
+#menu a {
+	color: rgba(100, 100, 255, 1);
+}
+
+#menu a:hover {
+	color: rgba(200, 200, 255, 1);
+}
+
+
 #content {
 	float: right;
-	width: 700px;
+	width: 70%;
+	background-color: rgba(0, 200, 0, 1);
+}
+
+#sponsors {
+	clear: both;
+	background-color: rgba(50, 100, 10, 1);
 }
 
 #footer {
 	clear: both;
 	font-size: 80%;
 	text-align: right;
+	background-color: rgba(60, 70, 80, 1);
 }
