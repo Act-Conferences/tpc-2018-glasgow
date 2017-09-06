@@ -5,6 +5,12 @@ body {
 	margin: 0pt auto;
 }
 
+h1.subtitle {
+	background-color: rgba(255, 255, 255, .2);
+	background-image: uri(css/logos/conf.png);
+	background-position: top right;
+	background-repeat: no-repeat;
+}
 
 /* LAYOUT SECTIONS */
 
