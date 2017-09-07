@@ -7,23 +7,21 @@ body {
 }
 
 h1.title {
-    margin: 45px 0 0 0;
-    font-size: 110%;
+    margin: 60px 0 0 0;
+    font-size: 1.2em;
     padding: 5px;
     color: rgba(121, 161, 256, 1);
 }
 
 h1.subtitle {
-    background: rgba(0, 0, 0, .8) url(logos/conf-logo.png);
-    background-position: top right;
-    background-repeat: no-repeat;
+    background: rgba(0, 0, 0, .8);
     position: fixed;
     top: 0;
     margin: 0;
     right: 0;
     left: 0;
     height: 40px;
-    font-size: 150%;
+    font-size: 2em;
     padding: 8px 5px 3px 5px;
     color: rgba(121, 161, 256, 1);
 }
@@ -49,6 +47,8 @@ h1.subtitle {
     padding: 0;
     overflow: hidden;
     background-color: rgba(100, 100, 100, 1);
+    position: fixed;
+    width: 100%;
 }
 
 #navbar li {
@@ -56,26 +56,27 @@ h1.subtitle {
     border-left: 1px solid rgba(210, 210, 210, 1);
 }
 
-#navbar li:last-child {
+#navbar li:first-child {
     border-left: none;
-}
-
-#navbar li a {
-    display: block;
-    color: rgba(255, 255, 255, 1);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-#navbar li a:hover {
-    background-color: rgba(0, 0, 0, 1);
 }
 
 #navbar .active {
     background-color: rgba(82, 134, 181, 1);
 }
 
+#navbar li a {
+    display: block;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+	font-size: .7em;
+  	text-transform: uppercase; 
+    padding: 8px 10px;
+    text-decoration: none;
+}
+
+#navbar li a:hover {
+    background-color: rgba(0, 0, 0, 1);
+}
 
 #menu {
 	clear: both;
