@@ -28,22 +28,27 @@
 </head>
 
 <body>
-[%- IF title -%]<h1 class="title">[% title  %]</h1>[%- END -%]
-
-<div id="wrapper">
 
   <div id="header">
-    <h1 class="subtitle">Yet Another Perl Conference :: Europe :: 2018</h1>
+
+    <h1 class="subtitle">The Perl Conference in Glasgow</h1>
+    
+    [%- IF title -%]<h1 class="title">[% title  %]</h1>[%- END -%]
+    
     <div id="navbar">
       <ul>
         <li><a href="/tpc-2018-glasgow/main">login</a></li>
         <li><a href="/tpc-2018-glasgow/register">register</a></li>
         <li><a href="/tpc-2018-glasgow/newtalk">submit</a></li>
         <li><a href="/tpc-2018-glasgow/talks">talks</a></li>
-        <li><a href="/tpc-2018-glasgow/">Home</a></li>
+        <li><a href="/tpc-2018-glasgow/">home</a></li>
       </ul>
     </div>
   </div>
+
+<div id="wrapper">
+
+
 
   <div id="content">
     [% content %]
