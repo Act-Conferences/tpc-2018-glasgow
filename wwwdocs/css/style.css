@@ -7,7 +7,7 @@ body {
 }
 
 h1.title {
-    background: rgba(255, 255, 255, .2) url(logos/conf-logo.png);
+    background: rgba(0, 0, 0, .8) url(logos/conf-logo.png);
     background-position: top right;
     background-repeat: no-repeat;
     position: fixed;
@@ -15,7 +15,10 @@ h1.title {
     margin: 0 0 -1px 0;
     right: 0;
     left: 0;
-    height: 50px;
+    height: 40px;
+    font-size: 150%;
+    padding: 8px 5px 3px 5px;
+    color: rgba(121, 161, 256, 1);
 }
 
 /* LAYOUT SECTIONS */
@@ -26,7 +29,34 @@ h1.title {
 }
 
 #header {
-	background-color: rgba(60, 60, 100, 1);
+	background-color: rgba(60, 60, 60, .6);
+}
+
+#navbar {
+}
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(100, 100, 100, 1);
+}
+
+#navbar li {
+    float: left;
+}
+
+#navbar li a {
+    display: block;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#navbar li a:hover {
+    background-color: rgba(0, 0, 0, 0);
 }
 
 #menu {
