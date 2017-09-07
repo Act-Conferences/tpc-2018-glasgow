@@ -7,11 +7,12 @@ body {
 }
 
 h1.title {
-	clear: both;
+  clear: both;
   margin: 0;
-  font-size: 1.2em;
-  padding: 5px;
+  font-size: 1em;
+  padding: 40px 10px 5px 0;
   color: rgba(121, 161, 256, 1);
+  text-align: right;
 }
 
 h1.subtitle {
@@ -58,11 +59,7 @@ h1.subtitle {
 	border-left: 1px solid rgba(210, 210, 210, 1);
 }
 
-#navbar li:first-child {
-	border-left: none;
-}
-
-#navbar .active {
+#navbar li a:active {
 	background-color: rgba(82, 134, 181, 1);
 }
 
@@ -104,9 +101,23 @@ h1.subtitle {
 }
 
 #content {
-	clear: both;
-	background-color: rgba(0, 200, 0, 1);
+  clear: both;
+  background-color: rgba(200, 200, 200, .2);
+  padding: 10px;
 }
+
+#content  a {
+	color: rgba(88, 152, 215, 1);
+  text-transform: uppercase; 
+  text-decoration: none;
+}
+
+#content  a:hover {
+	color: rgba(235, 232, 98, 1);
+  text-transform: uppercase; 
+  text-size: 1.1em;
+}
+
 
 #sponsors {
 	clear: both;
