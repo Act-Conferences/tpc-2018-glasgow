@@ -30,20 +30,41 @@
 </head>
 
 <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg=light">
+    <a class="navbar-brand" href="#">[% global.conference.name %]</a>
+    <button class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <div id="header">
-    <h1 class="subtitle">The Perl Conference in Glasgow</h1>
-    <div id="navbar">
-      <ul>
-        <li><a href="/tpc-2018-glasgow/main">login</a></li>
-        <li><a href="/tpc-2018-glasgow/register">register</a></li>
-        <li><a href="/tpc-2018-glasgow/newtalk">submit</a></li>
-        <li><a href="/tpc-2018-glasgow/talks">talks</a></li>
-        <li><a href="/tpc-2018-glasgow/">home</a></li>
-      </ul>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="navbar-text mr-auto">
+        [%- IF title -%][% title %][%- END -%]
+      </div>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/tpc-2018-glasgow/main">login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/tpc-2018-glasgow/register">register</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/tpc-2018-glasgow/newtalk">submit</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/tpc-2018-glasgow/talks">talks</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/tpc-2018-glasgow/">home</a>
+        </li>
+       </ul>
     </div>
-    [%- IF title -%]<h1 class="title">[% title  %]</h1>[%- END -%]
-  </div>
+  </nav>
 
   <div id="wrapper">
     <div id="content">
