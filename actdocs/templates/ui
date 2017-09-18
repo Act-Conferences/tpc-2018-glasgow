@@ -20,7 +20,7 @@
 <link rel="stylesheet" type="text/css" href="/css/schedule.css" />
 
 <!-- JavaScript sugar -->
-<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="[% make_uri_info('lib/jquery/js/jquery-3.2.1.min.js') %]"></script>
 <script type="text/javascript" src="/js/act.js"></script>
 <script type="text/javascript" src="[% make_uri_info('lib/bootstrap/js/bootstrap.min.js') %]"></script>
 
