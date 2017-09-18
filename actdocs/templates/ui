@@ -14,7 +14,7 @@
 [%- IF title -%]<title>[% title  %]</title>[%- END -%]
 
 <!-- CSS Stylesheets -->
-<link rel="stylesheet" type="text/css" href="[% make_uri_info('lib/boostrap/css/bootstrap.min.css') %]" />
+<link rel="stylesheet" type="text/css" href="[% make_uri_info('lib/bootstrap/css/bootstrap.min.css') %]" />
 <link rel="stylesheet" type="text/css" href="[% make_uri_info('css', 'style.css') %]" />
 <link rel="stylesheet" type="text/css" href="/css/act-base.css" />
 <link rel="stylesheet" type="text/css" href="/css/schedule.css" />
