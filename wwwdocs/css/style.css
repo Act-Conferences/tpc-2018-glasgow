@@ -5,6 +5,7 @@ body {
   margin: 0px auto;
   font-size: 1em;
 }
+
 .pagetitle {
     clear: both;
     margin: 0;
@@ -59,7 +60,7 @@ h3 {
 }
 
 .nav-row {
-  background: rgba(255, 255, 255, .8);
+    background: rgba(146, 143, 143, 1);
 }
 
 .navbar-light .navbar-brand {
@@ -84,34 +85,14 @@ h3 {
 
 ul.navbar-nav {
   list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: rgba(100, 100, 100, 1);
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
 li.nav-item {
-	float: right;
-	border-left: 1px solid rgba(210, 210, 210, 1);
-}
-
-a.nav-link {
-	display: block;
-	color: rgba(255, 255, 255, 1);
-  text-align: center;
-	font-size: .85em;
-  text-transform: uppercase; 
-  padding: 8px 10px;
-  text-decoration: none;
-}
-
-a.nav-link:active {
-	background-color: rgba(82, 134, 181, 1);
-}
-
-a.nav-link:hover {
-  background-color: rgba(0, 0, 0, 1);
-	color: rgba(200, 200, 200, 1);
+  float: right;
+	padding: 0 0 0 5px;
 }
 
 .contentrow {
