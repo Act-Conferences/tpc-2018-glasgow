@@ -2,6 +2,7 @@
 <html>
 
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Document Metadata -->
 <meta http-equiv="Content-Language" content="[% global.request.language %]" />
 <!-- OpenId -->
@@ -43,7 +44,7 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav ml-auto">
         <li class="nav-item">
           <a class="nav-link" href="/tpc-2018-glasgow/main">login</a>
         </li>
@@ -76,16 +77,16 @@
     <div id="sponsors">
         <h2><!--<a href="[% make_uri('sponsors.html') %]">-->Sponsors<!--</a>--></h2>
         <h3>Corporate</h3>
-          <a href="http://cpanel.com" target="_new"><img height="40px" src="[% make_uri_info('css/logos/cpanel.png') %]" alt="cPanel" title="Complete Web Host Management"/></a> 
-          <a href="http://www.eligo.co.uk/" target="_new"><img height="40px" src="[% make_uri_info('css/logos/eligo.jpg') %]" alt="Eligo" title="Professional Recruitment" /></a>
-          <!-- <a href="http://www.perl.careers" target="_new"><img height="40px" src="[% make_uri_info('css/logos/perl-careers.png') %]" alt="Perl Careers" title="Perl Recrtuitment" /></a>-->
-          <a href="https://www.pirum.com/" target="_new"><img height="40px" src="[% make_uri_info('css/logos/perlservices.png') %]" alt="Perl Services" title="Professional Perl Programming" /></a>
-          <a href="https://www.perl-services.de/" target="_new"><img height="40px" src="[% make_uri_info('css/logos/pirum.png') %]" alt="Pirum" title="Global Leaders in Securities Finance Automation" /></a>
-          <a href="http://shadow.cat" target="_new"><img height="40px" class="sponsorsimage" src="[% make_uri_info('css/logos/shadowcat.png') %]" alt="Shadowcat Systems Limited" title="Perl Consultancy with a Clue and a Commit Bit" /></a>
+          <a href="http://cpanel.com" target="_new"><img class="sponsorsimage" src="[% make_uri_info('css/logos/cpanel.png') %]" alt="cPanel" title="Complete Web Host Management"/></a> 
+          <a href="http://www.eligo.co.uk/" target="_new"><img class="sponsorsimage" src="[% make_uri_info('css/logos/eligo.jpg') %]" alt="Eligo" title="Professional Recruitment" /></a>
+          <!-- <a href="http://www.perl.careers" target="_new"><img class="sponsorsimage" src="[% make_uri_info('css/logos/perl-careers.png') %]" alt="Perl Careers" title="Perl Recrtuitment" /></a>-->
+          <a href="https://www.pirum.com/" target="_new"><img class="sponsorsimage" src="[% make_uri_info('css/logos/perlservices.png') %]" alt="Perl Services" title="Professional Perl Programming" /></a>
+          <a href="https://www.perl-services.de/" target="_new"><img class="sponsorsimage" src="[% make_uri_info('css/logos/pirum.png') %]" alt="Pirum" title="Global Leaders in Securities Finance Automation" /></a>
+          <a href="http://shadow.cat" target="_new"><img class="sponsorsimage" src="[% make_uri_info('css/logos/shadowcat.png') %]" alt="Shadowcat Systems Limited" title="Perl Consultancy with a Clue and a Commit Bit" /></a>
        <h3>Community</h3>
-          <a href="http://enlightenedperl.org/" target="_new"><img height="40px" class="sponsorsimage" src="[% make_uri_info('css/logos/epo.png') %]" alt="Enlightened Perl Organisation" title="Non profit association for Perl promotion" /></a>
-          <a href="http://perl6.org/" target="_new"><img height="40px" src="[% make_uri_info('css/logos/perl6.png') %]" alt="Perl6 Community" title="Non profit association for Perl promotion" /></a>
-          <a href="http://perlweekly.com/" target="_new"><img height="40px" src="[% make_uri_info('css/logos/perl_weekly.png') %]" alt="Perl Weekly" title="A weekly source of Perl News" /></a>
+          <a href="http://enlightenedperl.org/" target="_new"><img class="sponsorsimage" src="[% make_uri_info('css/logos/epo.png') %]" alt="Enlightened Perl Organisation" title="Non profit association for Perl promotion" /></a>
+          <a href="http://perl6.org/" target="_new"><img class="sponsorsimage" src="[% make_uri_info('css/logos/perl6.png') %]" alt="Perl6 Community" title="Non profit association for Perl promotion" /></a>
+          <a href="http://perlweekly.com/" target="_new"><img class="sponsorsimage" src="[% make_uri_info('css/logos/perl_weekly.png') %]" alt="Perl Weekly" title="A weekly source of Perl News" /></a>
       <hr />
     </div>
 
