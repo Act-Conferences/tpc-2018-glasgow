@@ -139,8 +139,6 @@ a.nav-link:hover {
 }
 
 #content {
-  clear: both;
-  background-color: rgba(40, 40, 40, 1);
   padding: 20px 10px 10px 10px;
 }
 
