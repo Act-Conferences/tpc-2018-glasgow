@@ -57,6 +57,11 @@ h3 {
 .navbar {
 	padding: .5rem 0rem;
 }
+
+.nav-row {
+  background: rgba(255, 255, 255, .8);
+}
+
 .navbar-light .navbar-brand {
     color: rgb(230, 230, 230);
     background: rgba(55, 55, 54, .7);
