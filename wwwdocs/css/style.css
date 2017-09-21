@@ -30,12 +30,13 @@ h1.subtitle {
 
 h2 {
   font-size: 1.5em;
-  color: rgba(200, 200, 200, 1);
+  color: rgba(100, 100, 100, 1);
 }
 
 h3 {
- font-size: 1.2em;
- color: rgba(88, 152, 215, 1);
+    font-size: 1.2em;
+    color: rgba(88, 152, 215, 1);
+    padding: 10px 0px 0px 0px;
 }
 
 /* LAYOUT SECTIONS */
@@ -143,11 +144,10 @@ a.nav-link:hover {
 
 
 #sponsors {
-	clear: both;
-	margin: 0;
-	background-color: rgba(200, 200, 200, .4);
-  padding: 20px 10px 10px 10px;
-
+    clear: both;
+    margin: 0;
+    background-color: rgba(200, 200, 200, .8);
+    padding: 5px 10px 10px 10px;
 }
 
 #footer {
