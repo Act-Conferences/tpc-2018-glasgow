@@ -6,7 +6,7 @@ body {
   font-size: 1em;
 }
 
-h1.title {
+.pagetitle {
   clear: both;
   margin: 0;
   font-size: 1em;
