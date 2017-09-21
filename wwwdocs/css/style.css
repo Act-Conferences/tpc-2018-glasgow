@@ -1,5 +1,5 @@
 body {
-  background: rgba(200, 200, 200, 1) url('cubes2.jpg') repeat;
+  background: rgba(200, 200, 200, 1) url('cubes4.jpg') repeat;
   color: rgba(200, 200, 200, 1);
   font-family: sans-serif;
   margin: 0px auto;
@@ -10,7 +10,7 @@ body {
     margin: 0;
     font-size: .9em;
     padding: 0px 10px 5px 0;
-    color: rgb(8, 46, 136);
+    color: rgb(255, 255, 255);
     text-align: right;
     font-weight: 600;
 }
@@ -59,7 +59,7 @@ h3 {
 }
 
 .navbar-light .navbar-brand {
-    color: rgb(34, 80, 187);
+    color: rgb(145, 167, 218);
     font-size: 150%;
     font-weight: 600;
 }
@@ -115,13 +115,13 @@ a.nav-link:hover {
     background-color: rgba(31, 31, 31, .9);
     padding: 10px 5px 20px 14px;
     border-radius: 13px;
-    margin: 0 10px 10px 0;
+    margin: 10px 10px 10px 0;
     border: 3px solid rgb(95, 92, 92);
 }
 
 
 #menu h2 {
-	font-size: 10%;
+	font-size: 100%;
 }
 
 #menu li {
@@ -139,7 +139,11 @@ a.nav-link:hover {
 }
 
 #content {
-  padding: 20px 10px 10px 10px;
+    clear: both;
+    background-color: rgba(40, 40, 40, 1);
+    padding: 20px 10px 10px 10px;
+    margin: 10px 0 10px 10px;
+    min-height: 95%;
 }
 
 #content  a {
