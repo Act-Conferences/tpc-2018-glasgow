@@ -1,18 +1,18 @@
 body {
-  background: rgba(200, 200, 200, 1) url('cubes.jpg') repeat;
+  background: rgba(200, 200, 200, 1) url('cubes2.jpg') repeat;
   color: rgba(200, 200, 200, 1);
   font-family: sans-serif;
   margin: 0px auto;
   font-size: 1em;
 }
-
 .pagetitle {
-  clear: both;
-  margin: 0;
-  font-size: 1em;
-  padding: 40px 10px 5px 0;
-  color: rgba(121, 161, 256, 1);
-  text-align: right;
+    clear: both;
+    margin: 0;
+    font-size: .9em;
+    padding: 0px 10px 5px 0;
+    color: rgb(8, 46, 136);
+    text-align: right;
+    font-weight: 600;
 }
 
 h1.subtitle {
@@ -49,8 +49,24 @@ h3 {
 	background-color: rgba(60, 60, 60, .6);
 }
 
-#navbar {
-	margin: 50px 0 0 0;
+.navbar {
+	padding: .5rem 0rem;
+}
+
+.navbar-light .navbar-brand {
+    color: rgb(34, 80, 187);
+    font-size: 150%;
+    font-weight: 600;
+}
+
+.navbar-collapse {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    -ms-flex-align: center;
+    align-items: center;
+    /* float: right; */
+    line-height: 100%;
+    font-size: 90%;
 }
 
 ul.navbar-nav {
@@ -84,6 +100,7 @@ a.nav-link:active {
 
 a.nav-link:hover {
   background-color: rgba(0, 0, 0, 1);
+	color: rgba(200, 200, 200, 1);
 }
 
 #menu {
