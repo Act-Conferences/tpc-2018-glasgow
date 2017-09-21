@@ -31,44 +31,52 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg=light">
-    <a class="navbar-brand" href="#">The Perl Conference - Glasgow</a>
-    <button class="navbar-toggler"
+  <div class="row">
+    <div class="col-1 col-sm-0">
+      <img class="img-fluid" src="css/logos/conf-logo.png">
+    </div>
+    <div class="col">
+      <nav class="navbar navbar-expand-lg navbar-light bg=light">
+        <a class="navbar-brand" href="#">The Perl Conference - Glasgow</a>
+          <button class="navbar-toggler"
             type="button"
             data-toggle="collapse"
             data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="/tpc-2018-glasgow/main">login</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/tpc-2018-glasgow/register">register</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/tpc-2018-glasgow/newtalk">submit</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/tpc-2018-glasgow/talks">talks</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/tpc-2018-glasgow/">home</a>
-        </li>
-       </ul>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/tpc-2018-glasgow/main">login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/tpc-2018-glasgow/register">register</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/tpc-2018-glasgow/newtalk">submit</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="/tpc-2018-glasgow/talks">talks</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="/tpc-2018-glasgow/">home</a>
+           </li>
+         </ul>
+       </div>
+      </nav>
     </div>
-  </nav>
+    
+    <div class="row">
+      <div class="col ml-auto">
+            [%- IF title -%][% title %][%- END -%]
+      </div>
+    </div>
 
-  <div class="pagetitle">
-    [%- IF title -%][% title %][%- END -%]
-  </div>
-
-  <div id="wrapper">
+    <div id="wrapper">
 
     <div class="row contentrow">
       <div class="col-sm-8">
