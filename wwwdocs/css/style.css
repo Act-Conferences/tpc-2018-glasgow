@@ -56,21 +56,25 @@ h3 {
 }
 
 .navbar {
-	padding: .5rem 0rem;
+	padding: .5rem .2rem;
 }
 
 .nav-row {
-    background: rgba(146, 143, 143, 1);
+    background: rgba(255, 255, 255, 1);
 }
 
 .navbar-light .navbar-brand {
-    color: rgb(230, 230, 230);
-    background: rgba(55, 55, 54, .7);
-    font-size: 150%;
+    color: rgba(50, 50, 50, 1);
+    /* background: rgba(55, 55, 54, .7); */
+    font-size: 2em;
     font-weight: 600;
-    padding-right: 20px;
-    border-bottom-right-radius: 40px;
-    border-top-right-radius: 40px;
+    /* padding-right: 20px; */
+    /* border-bottom-right-radius: 40px; */
+    /* border-top-right-radius: 40px; */
+}
+
+.bg-light {
+    background-color: #f8f9fa!important;
 }
 
 .navbar-collapse {
@@ -110,7 +114,8 @@ li.nav-item {
 
 
 #menu h2 {
-	font-size: 100%;
+    font-size: 100%;
+    color: rgb(226, 226, 226);
 }
 
 #menu li {
@@ -120,7 +125,7 @@ li.nav-item {
 
 #menu a {
   font-size: 80%;
-  color: rgba(75, 75, 75, 1);
+  color: rgba(243, 240, 240, 1);
 }
 
 #menu a:hover {
@@ -133,6 +138,7 @@ li.nav-item {
     padding: 20px 10px 10px 10px;
     margin: 10px 0 10px 10px;
     min-height: 95%;
+    border-radius: 15px;
 }
 
 #content  a {
