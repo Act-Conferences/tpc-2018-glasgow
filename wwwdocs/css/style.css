@@ -1,5 +1,5 @@
 body {
-  background: rgba(20, 20, 20, 1);
+  background: rgba(0, 0, 0, 1);
   color: rgba(200, 200, 200, 1);
   font-family: sans-serif;
   margin: 0px auto;
@@ -46,9 +46,9 @@ h3 {
 }
 /* LAYOUT SECTIONS */
 
-#wrapper {
-	margin: 0px auto;
-	width: 100%;
+.wrapper {
+    margin: 0px 5px;
+    /* width: 100%; */
 }
 
 #header {
@@ -60,7 +60,8 @@ h3 {
 }
 
 .nav-row {
-    background: rgba(255, 255, 255, 1);
+    background: rgba(255, 255, 255, 1) url(cubes2.jpg);
+    opacity: 0.9;
 }
 
 .navbar-light .navbar-brand {
@@ -74,7 +75,7 @@ h3 {
 }
 
 .bg-light {
-    background-color: #f8f9fa!important;
+    background-color: rgba(255, 255, 255, 0)!important;
 }
 
 .navbar-collapse {
@@ -100,7 +101,7 @@ li.nav-item {
 }
 
 .contentrow {
-  background: rgba(50, 50, 50, .9);
+    background: rgba(0, 0, 0, 0.9);
 }
 
 #menu {
@@ -151,11 +152,13 @@ li.nav-item {
 }
 
 
-#sponsors {
+.sponsors {
     clear: both;
-    margin: 0;
-    background-color: rgba(200, 200, 200, .8);
-    padding: 5px 10px 10px 10px;
+    background-color: rgba(40, 40, 40, 1);
+    padding: 20px 10px 10px 10px;
+    margin: 10px 0 10px 10px;
+    min-height: 95%;
+    border-radius: 15px;
 }
 
 #footer {
