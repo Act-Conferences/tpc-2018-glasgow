@@ -31,6 +31,7 @@
 </head>
 
 <body>
+<div class="container-fluid">
   <div class="row nav-row">
     <div class="col-2  d-none d-md-inline">
       <img class="img-fluid" src="css/logos/conf-logo-scale.png">
@@ -79,9 +80,7 @@
       </div>
     </div>
 
-    <div id="wrapper">
-
-    <div class="row contentrow">
+    <div class="row contentrow wrapper">
       <div class="col-sm-8">
         <div id="content">
           [% content %]
@@ -94,8 +93,7 @@
       </div>
     </div>  
 
-  <div id="sponsors">
-    <div class="row">
+    <div class="row sponsors">
       <div class="col">
         <h2><!--<a href="[% make_uri('sponsors.html') %]">-->Sponsors<!--</a>--></h2>
       </div>
@@ -116,16 +114,17 @@
           <a href="http://perlweekly.com/" target="_new"><img class="sponsorsimage" src="[% make_uri_info('css/logos/perl_weekly.png') %]" alt="Perl Weekly" title="A weekly source of Perl News" /></a>
       </div>
     </div>
-  </div>
 
 
-    <div id="footer">
+
+    <div class="row footer">
+      <div class="col">
       <a href="https://twitter.com/share" class="twitter-share-button" data-text="London Perl Workshop 2015:" data-via="shadowcat_mdk" data-hashtags="lpw2015">Tweet</a>
       <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
       Powered by <a href="http://act.mongueurs.net/">Act</a>
     </div>
-
   </div>
 
+</div>
 </body>
 </html>
