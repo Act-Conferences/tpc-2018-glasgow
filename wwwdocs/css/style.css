@@ -72,12 +72,12 @@ h3 {
     opacity: 0.9;
     position: fixed;
     top: 0;
-    height: 100px;
+    height: 200px;
     z-index: 99;
 }
 
 .tag-line {
-  margin: 100px 0 0 0;
+  margin: 200px 0 0 0;
 }
 
 .navbar-light .navbar-brand {
