@@ -1,22 +1,32 @@
 [% WRAPPER ui title = global.conference.name %]
 
-<h2>
-Welcome to Glasgow
-</h2>
+<div class="row">   
+  <div class="col">
+  </div>
+  <div class="col">
+    <h2>
+      Welcome to Glasgow
+    </h2>
+  <div>
+</div>
 
-<p>
-The Perl Conference - which in the Perl community is usually referred to as Yet Another Perl Conference Europe (YAPC::EU) - is the annual meeting of Perl Mongers, developers, administrators, technical managers and interested parties in Europe. In 2018 the European Perl Conference will be held at The Studio in Glasgow between 13th-17th August.
-</p>
+<div class="row">
+    <div class="col">
+      <p>
+        The Perl Conference - which in the Perl community is usually referred to as Yet Another Perl Conference Europe (YAPC::EU) - is the annual meeting of Perl Mongers, developers, administrators, technical managers and interested parties in Europe. In 2018 the European Perl Conference will be held at The Studio in Glasgow between 13th-17th August.
+    </p>
+    <p>
+      YAPC started off as a series of grassroots user meetings, with discussions among Perl Mongers, and has grown from there. The very first OSCON grew out of the original Perl Conference. The focus is on enjoying the ideas of others, discovering new concepts, and feeling the enthusiasm of fellow programmers. Although our conference is devoted primarily to the Perl 5 and Perl 6 programming languages we appreciate asnd value discussions and submissions from other languages and technical disciplines.
+    </p>
+    <p>
+      Watch this space for updates, or check the <a href="[% global.request.base_url %][% make_uri_info( 'atom', global.request.language ) %].xml">feed</a>.
+    </p>
+  </div>
+</div>
 
-<p>
-YAPC started off as a series of grassroots user meetings, with discussions among Perl Mongers, and has grown from there. The very first OSCON grew out of the original Perl Conference. The focus is on enjoying the ideas of others, discovering new concepts, and feeling the enthusiasm of fellow programmers. Although our conference is devoted primarily to the Perl 5 and Perl 6 programming languages we appreciate asnd value discussions and submissions from other languages and technical disciplines.
-</p>
-
-<p>
-Watch this space for updates, or check the <a href="[% global.request.base_url %][% make_uri_info( 'atom', global.request.language ) %].xml">feed</a>.
-</p>
-
-[% news = global.news(3);
+<div class="row">
+    <div class="col">
+      [% news = global.news(3);
    IF news.size > 2;
      more = news.pop;
    END;
@@ -42,5 +52,7 @@ Watch this space for updates, or check the <a href="[% global.request.base_url %
  <a href="[% make_uri('news') %]" class="news-link">Older announcements</a>
 </p>
 [% END %]
+  </div>
+</div>
 
 [% END %]
