@@ -52,23 +52,9 @@
          
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-           <li class="nav-item">
-             <a class="btn btn-secondary btn-block" href="/tpc-2018-glasgow/">home</a>
-           </li>            
-            <li class="nav-item">
-              <a class="btn btn-primary btn-block" href="/tpc-2018-glasgow/main">login</a>
-            </li>
-            <li class="nav-item">
-              <a class="btn btn-secondary btn-block" href="/tpc-2018-glasgow/register">register</a>
-            </li>
-            <li class="nav-item">
-              <a class="btn btn-secondary btn-block" href="/tpc-2018-glasgow/newtalk">submit</a>
-            </li>
-            <li class="nav-item">
-            <a class="btn btn-secondary btn-block" href="/tpc-2018-glasgow/talks">talks</a>
-           </li>
-         </ul>    
+          <div id="menu">
+            [% PROCESS menu %]
+          </div>   
         </div>
       </nav>
     </div>
@@ -81,16 +67,11 @@
     </div>
 
     <div class="row contentrow wrapper">
-      <div class="col-sm-9">
+      <div class="col">
         <div id="content">
           [% content %]
         </div>
       </div>  
-      <div class="col-sm-3">
-        <div id="menu">
-          [% PROCESS menu %]
-        </div>
-      </div>
     </div>  
 
     <div class="row sponsors">
