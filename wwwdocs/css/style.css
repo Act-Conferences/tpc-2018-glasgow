@@ -70,6 +70,12 @@ h3 {
 .nav-row {
     background: rgba(255, 255, 255, 1) url(cubes2.jpg);
     opacity: 0.9;
+    position: fixed;
+    height: 100px;
+}
+
+.tag-line {
+  margin: 100px 0 0 0;
 }
 
 .navbar-light .navbar-brand {
