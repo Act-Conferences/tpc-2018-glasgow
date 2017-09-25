@@ -74,19 +74,19 @@
     </div>
   </div>
     
-    <div class="row">
+    <div class="row tag-line">
       <div class="col ml-auto">
             [%- IF title -%][% title %][%- END -%]
       </div>
     </div>
 
     <div class="row contentrow wrapper">
-      <div class="col-sm-8">
+      <div class="col-sm-9">
         <div id="content">
           [% content %]
         </div>
       </div>  
-      <div class="col-sm-4">
+      <div class="col-sm-3">
         <div id="menu">
           [% PROCESS menu %]
         </div>
