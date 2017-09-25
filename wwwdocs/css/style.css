@@ -90,10 +90,6 @@ h3 {
     /* border-top-right-radius: 40px; */
 }
 
-.bg-light {
-    background-color: rgba(255, 255, 255, 0)!important;
-}
-
 .navbar-collapse {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
