@@ -20,12 +20,6 @@
 <link rel="stylesheet" type="text/css" href="/css/act-base.css" />
 <link rel="stylesheet" type="text/css" href="/css/schedule.css" />
 
-<!-- JavaScript sugar -->
-<script type="text/javascript" src="[% make_uri_info('lib/jquery/js/jquery-3.2.1.min.js') %]"></script>
-<script type="text/javascript" src="[% make_uri_info('lib/popper/js/popper.min.js') %]"></script>
-<script type="text/javascript" src="/js/act.js"></script>
-<script type="text/javascript" src="[% make_uri_info('lib/bootstrap/js/bootstrap.min.js') %]"></script>
-
 <!-- Favorite icon -->
 <link rel="shortcut icon" type="image/png" href="/favicon.png" />
 </head>
@@ -80,5 +74,10 @@
   </div>
 
 </div>
+  <!-- JavaScript sugar - loaded at the end -->
+  <script type="text/javascript" src="[% make_uri_info('lib/jquery/js/jquery-3.2.1.min.js') %]"></script>
+  <script type="text/javascript" src="[% make_uri_info('lib/popper/js/popper.min.js') %]"></script>
+  <script type="text/javascript" src="[% make_uri_info('lib/bootstrap/js/bootstrap.min.js') %]"></script>
+  <script type="text/javascript" src="/js/act.js"></script>
 </body>
 </html>
