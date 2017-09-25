@@ -1,0 +1,15 @@
+[% IF global.request.user.is_talks_admin %]
+  <div class="dropdown-divider"></div>
+  <h6 class="dropdown-header">
+    Talks
+  </h6>
+  <a class="dropdown-item" href="[% make_uri('tracks') %]">
+    {{ Tracks }}
+  </a>
+  <a class="dropdown-item" href="[% make_uri('ical_import') %]">
+    {{ iCal import }}
+  </a>
+  <a class="dropdown-item" href="[% make_uri('export_talks') %]">
+    {{ CSV export }}
+  </a>
+[% END %]

@@ -1,0 +1,20 @@
+[% IF global.request.user.is_talks_admin
+   OR global.request.user.is_users_admin
+   OR global.request.user.is_news_admin
+   OR global.request.user.is_treasurer
+   OR global.request.user.is_admin
+   %]
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+      {{ Admin }}
+    </a>
+    <div class="dropdown-menu">
+      [% PROCESS custom/menus/admin_news %]
+      [% PROCESS custom/menus/admin_users %]
+      [% PROCESS custom/menus/admin_talks %]
+      [% PROCESS custom/menus/admin_events %]
+      [% PROCESS custom/menus/admin_treasurer %]
+      [% PROCESS custom/menus/admin_admin %]
+    </div>
+  </li>
+[% END %]

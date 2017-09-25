@@ -31,38 +31,8 @@
 </head>
 
 <body>
-<div class="container-fluid">
-  <div class="row nav-row">
-    <div class="col-2  d-none d-md-inline">
-      <img class="img-fluid" src="css/logos/conf-logo-scale.png">
-    </div>
-
-    <div class="col-10">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">The Perl Conference - Glasgow</a>
-    </div>
-    
-    <div class="col>"
-          <button class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-         
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <div id="menu">
-            [% PROCESS menu %]
-          </div>   
-        </div>
-      </nav>
-    </div>
-  </div>
-    
+  [% PROCESS custom/navbar %]
+  <div class="container-fluid">
     <div class="row tag-line">
       <div class="col ml-auto">
             [%- IF title -%][% title %][%- END -%]

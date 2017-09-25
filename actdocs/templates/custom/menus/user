@@ -1,0 +1,25 @@
+[% IF global.request.user %]
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+      [% global.request.user.login %]
+    </a>
+    <div class="dropdown-menu">
+      [% UNLESS global.request.user.participation OR global.config.closed %]
+        <a class="dropdown-item" href="[% make_uri('register') %]">{{ Register }}</a>
+      [% END %]
+      <a class="dropdown-item" href="[% make_uri_info('user', global.request.user.user_id) %]">
+        My Profile
+      </a>
+      <a class="dropdown-item" href="[% make_uri('main') %]">{{ Edit profile }}</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="[% make_uri('logout') %]">{{ Logout }}</a>
+    </div>
+  </li>
+[% ELSE %]
+  <li class="nav-item">
+    <a class="nav-link" href="[% make_uri('main') %]">{{ Log in }}</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="[% make_uri('register') %]">{{ New user }}</a>
+  </li>
+[% END %]

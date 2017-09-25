@@ -1,0 +1,15 @@
+[% IF global.request.user.is_users_admin %]
+  <div class="dropdown-divider"></div>
+  <h6 class="dropdown-header">
+    {{ Users }}
+  </h6>
+  <a class="dropdown-item" href="[% make_uri('export') %]">
+    {{ CSV export }}
+  </a>
+  <a class="dropdown-item" href="[% make_uri('confirm_attend') %]">
+    {{ Confirm Attendance }}
+  </a>
+  <a class="dropdown-item" href="[% make_uri('create') %]">
+    {{ Register a new user }}
+  </a>
+[% END %]

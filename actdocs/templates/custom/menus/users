@@ -1,0 +1,13 @@
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+    {{ Users }}
+  </a>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="[% make_uri('search') %]">
+      {{ Search }}
+    </a>
+    <a class="dropdown-item" href="[% make_uri('stats') %]">
+      {{ Statistics }}
+    </a>
+  </div>
+</li>
