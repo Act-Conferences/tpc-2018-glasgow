@@ -54,6 +54,8 @@ h3 {
     margin: 20px 10px;
 }
 
+
+
 .wrapper {
     margin: 0px;
     /* width: 100%; */
@@ -104,42 +106,12 @@ li.nav-item {
 	padding: 0 0 0 5px;
 }
 
-.contentrow {
-    background: rgba(0, 0, 0, 0.9);
-}
-
-#menu {
-    /* clear: both; */
-
-}
-
-
-#menu h2 {
-    font-size: 100%;
-    color: rgb(226, 226, 226);
-}
-
-#menu li {
-  margin-left: 1em;
-  list-style-type: none;
-}
-
-#menu a {
-  font-size: 80%;
-  color: rgba(243, 240, 240, 1);
-}
-
-#menu a:hover {
-  color: rgba(200, 200, 255, 1);
-}
-
 #content {
     clear: both;
     background-color: rgba(40, 40, 40, 1);
     padding: 20px 10px 10px 10px;
     margin: 10px 0 10px 10px;
     min-height: 95%;
-    border-radius: 15px;
 }
 
 #content  a {
@@ -158,7 +130,6 @@ li.nav-item {
     padding: 20px 10px 10px 10px;
     margin: 10px 25px;
     min-height: 95%;
-    border-radius: 15px;
 }
 
 .footer {
@@ -167,10 +138,17 @@ li.nav-item {
     text-align: right;
     background-color: rgba(49, 50, 50, 1);
     margin: 10px 25px;
-    border-radius: 10px;
     padding: 10px;
 }
 
 .navbar-brand-image {
   width: 16%;
+}
+
+.rounded-15px {
+  border-radius: 15px;
+}
+
+.rounded-10px {
+  border-radius: 10px;
 }
