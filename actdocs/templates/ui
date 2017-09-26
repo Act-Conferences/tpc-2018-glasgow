@@ -27,52 +27,60 @@
 <body>
   [% PROCESS custom/navbar %]
   <div class="container-fluid">
-    <div class="row tag-line">
-      <div class="col ml-auto">
-        [%- IF title -%][% title %][%- END -%]
+
+    <div class="row no-gutters">
+      <div class="col">
+        <div class="tag-line">
+          [%- IF title -%][% title %][%- END -%]
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="row rounded-15px wrapper">
-    <div class="col">
-      <div id="content">
-        [% content %]
+    <div class="row no-gutters">
+      <div class="col">
+        <div id="content" class="rounded-15px">
+          [% content %]
+        </div>
       </div>
-    </div>  
-  </div>  
-
-  <div class="row rounded-15px sponsors">
-    <div class="col">
-      <h2><!--<a href="[% make_uri('sponsors.html') %]">-->Sponsors<!--</a>--></h2>
     </div>
-    <div class="w-100"></div>
-    <div class="col">
-      <h3>Corporate</h3>
-      <a href="http://cpanel.com" target="_new"><img class="sponsorsimagelrg" src="[% make_uri_info('css/logos/cpanel3.png') %]" alt="cPanel" title="Complete Web Host Management"/></a> 
-      <a href="http://www.eligo.co.uk/" target="_new"><img class="sponsorsimagelrg" src="[% make_uri_info('css/logos/eligo.png') %]" alt="Eligo" title="Professional Recruitment" /></a>
-      <!-- <a href="http://www.perl.careers" target="_new"><img class="sponsorsimage" src="[% make_uri_info('css/logos/perl-careers.png') %]" alt="Perl Careers" title="Perl Recrtuitment" /></a>-->
-      <a href="https://www.pirum.com/" target="_new"><img class="sponsorsimage" src="[% make_uri_info('css/logos/perlservices.png') %]" alt="Perl Services" title="Professional Perl Programming" /></a>
-      <a href="https://www.perl-services.de/" target="_new"><img class="sponsorsimage" src="[% make_uri_info('css/logos/pirum.png') %]" alt="Pirum" title="Global Leaders in Securities Finance Automation" /></a>
-      <a href="http://shadow.cat" target="_new"><img class="sponsorsimagelrg" src="[% make_uri_info('css/logos/shadowcat.png') %]" alt="Shadowcat Systems Limited" title="Perl Consultancy with a Clue and a Commit Bit" /></a>
-    </div>
-    <div class="col">
-      <h3>Community</h3>
-      <a href="http://enlightenedperl.org/" target="_new"><img class="sponsorsimagelrg" src="[% make_uri_info('css/logos/epo.png') %]" alt="Enlightened Perl Organisation" title="Non profit association for Perl promotion" /></a>
-      <a href="http://perl6.org/" target="_new"><img class="sponsorsimagelrg" src="[% make_uri_info('css/logos/perl6.png') %]" alt="Perl6 Community" title="Non profit association for Perl promotion" /></a>
-      <a href="http://perlweekly.com/" target="_new"><img class="sponsorsimage" src="[% make_uri_info('css/logos/perl_weekly.png') %]" alt="Perl Weekly" title="A weekly source of Perl News" /></a>
-    </div>
-  </div>
 
-
-
-  <div class="row rounded-10px footer">
-    <div class="col">
-      <a href="https://twitter.com/share" class="twitter-share-button" data-text="London Perl Workshop 2015:" data-via="shadowcat_mdk" data-hashtags="lpw2015">Tweet</a>
-      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-      Powered by <a href="http://act.mongueurs.net/">Act</a>
+    <div class="row no-gutters">
+      <div class="col">
+        <div class="sponsors rounded-15px">
+          <div class="row">
+            <div class="col">
+              <h2><!--<a href="[% make_uri('sponsors.html') %]">-->Sponsors<!--</a>--></h2>
+            </div>
+            <div class="w-100"></div>
+            <div class="col">
+              <h3>Corporate</h3>
+              <a href="http://cpanel.com" target="_new"><img class="sponsorsimagelrg" src="[% make_uri_info('css/logos/cpanel3.png') %]" alt="cPanel" title="Complete Web Host Management"/></a> 
+              <a href="http://www.eligo.co.uk/" target="_new"><img class="sponsorsimagelrg" src="[% make_uri_info('css/logos/eligo.png') %]" alt="Eligo" title="Professional Recruitment" /></a>
+              <!-- <a href="http://www.perl.careers" target="_new"><img class="sponsorsimage" src="[% make_uri_info('css/logos/perl-careers.png') %]" alt="Perl Careers" title="Perl Recrtuitment" /></a>-->
+              <a href="https://www.pirum.com/" target="_new"><img class="sponsorsimage" src="[% make_uri_info('css/logos/perlservices.png') %]" alt="Perl Services" title="Professional Perl Programming" /></a>
+              <a href="https://www.perl-services.de/" target="_new"><img class="sponsorsimage" src="[% make_uri_info('css/logos/pirum.png') %]" alt="Pirum" title="Global Leaders in Securities Finance Automation" /></a>
+              <a href="http://shadow.cat" target="_new"><img class="sponsorsimagelrg" src="[% make_uri_info('css/logos/shadowcat.png') %]" alt="Shadowcat Systems Limited" title="Perl Consultancy with a Clue and a Commit Bit" /></a>
+            </div>
+            <div class="col">
+              <h3>Community</h3>
+              <a href="http://enlightenedperl.org/" target="_new"><img class="sponsorsimagelrg" src="[% make_uri_info('css/logos/epo.png') %]" alt="Enlightened Perl Organisation" title="Non profit association for Perl promotion" /></a>
+              <a href="http://perl6.org/" target="_new"><img class="sponsorsimagelrg" src="[% make_uri_info('css/logos/perl6.png') %]" alt="Perl6 Community" title="Non profit association for Perl promotion" /></a>
+              <a href="http://perlweekly.com/" target="_new"><img class="sponsorsimage" src="[% make_uri_info('css/logos/perl_weekly.png') %]" alt="Perl Weekly" title="A weekly source of Perl News" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
+
+    <div class="row no-gutters">
+      <div class="col">
+        <div class="footer rounded-10px">
+          <a href="https://twitter.com/share" class="twitter-share-button" data-text="London Perl Workshop 2015:" data-via="shadowcat_mdk" data-hashtags="lpw2015">Tweet</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          Powered by <a href="http://act.mongueurs.net/">Act</a>
+        </div>
+      </div>
+    </div>
 
   </div>
   <!-- JavaScript sugar - loaded at the end -->
