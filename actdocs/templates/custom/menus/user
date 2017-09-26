@@ -3,7 +3,7 @@
     <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
       [% global.request.user.login %]
     </a>
-    <div class="dropdown-menu">
+    <div class="dropdown-menu dropdown-menu-right">
       [% UNLESS global.request.user.participation OR global.config.closed %]
         <a class="dropdown-item" href="[% make_uri('register') %]">{{ Register }}</a>
       [% END %]

@@ -8,7 +8,7 @@
     <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
       {{ Admin }}
     </a>
-    <div class="dropdown-menu">
+    <div class="dropdown-menu dropdown-menu-right">
       [% PROCESS custom/menus/admin_news %]
       [% PROCESS custom/menus/admin_users %]
       [% PROCESS custom/menus/admin_talks %]
