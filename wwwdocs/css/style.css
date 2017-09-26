@@ -73,7 +73,6 @@ h3 {
     position: fixed;
     top: 0;
     height: 200px;
-    z-index: 99;
 }
 
 .tag-line {
