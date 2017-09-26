@@ -99,13 +99,6 @@ h3 {
     font-size: 90%;
 }
 
-ul.navbar-nav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
 li.nav-item {
   float: right;
 	padding: 0 0 0 5px;
