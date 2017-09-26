@@ -7,7 +7,7 @@
       {{ Presentations }}
     </a>
     <a class="dropdown-item" href="[% make_uri('favtalks') %]">
-      {{ Favourite Talks }}
+      {{ Favorite Talks }}
     </a>
     [% IF global.config.talks_show_schedule OR global.request.user.is_talks_admin %]
       <div class="dropdown-divider"></div>
