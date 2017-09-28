@@ -1,6 +1,6 @@
 body {
-  background: rgba(0, 0, 0, 1);
-  color: rgba(200, 200, 200, 1);
+  background: rgba(255, 255, 255, 1);
+  color: rgba(50, 50, 50, 1);
   font-family: sans-serif;
   margin: 0px auto;
   font-size: 1em;
@@ -54,7 +54,9 @@ h3 {
     margin: 20px 10px;
 }
 
-
+lrg-conf-logo {
+  width: 60%;
+}
 
 .wrapper {
     margin: 0px;
