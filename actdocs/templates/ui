@@ -38,7 +38,7 @@
 
     <div class="row no-gutters">
       <div class="col">
-        <div id="content" class="rounded-15px">
+        <div id="top-content" class="content rounded-15px">
           [% content %]
         </div>
       </div>
@@ -46,7 +46,7 @@
 
     <div class="row no-gutters">
       <div class="col">
-        <div class="sponsors rounded-15px">
+        <div class="sponsors rounded-15px content">
           <div class="row">
             <div class="col">
               <h2><!--<a href="[% make_uri('sponsors.html') %]">-->Sponsors<!--</a>--></h2>
