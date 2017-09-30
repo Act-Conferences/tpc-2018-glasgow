@@ -120,7 +120,7 @@ li.nav-item {
 .content {
   display: block;
     clear: both;
-    background-color: rgba(40, 40, 40, 1);
+    background-color: rgba(255, 255, 255, .8);
     padding: 0;
     margin: 50px 0px;
     min-height: 95%;
@@ -135,6 +135,13 @@ li.nav-item {
 	color: rgba(235, 232, 98, 1);
 }
 
+.toprow {
+  background: url(/glasgow2.jpg);
+}
+
+.middlerow {
+
+}
 
 .sponsors {
     clear: both;
