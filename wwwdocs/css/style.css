@@ -63,6 +63,14 @@ h3 {
     /* width: 100%; */
 }
 
+.container-fluid {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 0PX;
+    padding-left: 0PX;
+}
+
 #header {
 	background-color: rgba(60, 60, 60, .6);
 }
@@ -80,7 +88,7 @@ h3 {
 }
 
 .tag-line {
-
+    padding: 0PX 10PX;
 }
 
 .navbar-light .navbar-brand {
@@ -108,11 +116,12 @@ li.nav-item {
 	padding: 0 0 0 5px;
 }
 
-#content {
+.content {
+  display: block;
     clear: both;
     background-color: rgba(40, 40, 40, 1);
-    padding: 20px 10px 10px 10px;
-    margin: 10px 0 10px 10px;
+    padding: 0;
+    margin: 50px 0px;
     min-height: 95%;
 }
 
