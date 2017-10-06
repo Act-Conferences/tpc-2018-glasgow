@@ -5,6 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Document Metadata -->
 <meta http-equiv="Content-Language" content="[% global.request.language %]" />
+<meta property="og:title" content="The Perl Conference - Glasgow 2018" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://act.perlconference.org/tpc-2018-glasgow/" />
+<meta property="og:image" content="http://act.perlconference.org/tpc-2018-glasgow/css/logos/lrg-conf-logo.png" />
 <!-- OpenId -->
 [% IF openid %]
 <link rel="openid.server" href="[% global.request.base_url %][% make_uri('openid') %]" />
