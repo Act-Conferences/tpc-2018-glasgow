@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Document Metadata -->
 <meta http-equiv="Content-Language" content="[% global.request.language %]" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="http://act.perlconference.org/tpc-2018-glasgow/css/logos/lrg-conf-logo.png"/>
 <meta property="og:title" content="The Perl Conference - Glasgow 2018" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://act.perlconference.org/tpc-2018-glasgow/" />
