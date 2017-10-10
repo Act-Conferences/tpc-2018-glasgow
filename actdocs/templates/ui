@@ -64,8 +64,8 @@
               <a href="http://www.eligo.co.uk/" target="_new"><img class="sponsorsimagelrg" src="[% make_uri_info('css/logos/eligo.png') %]" alt="Eligo" title="Professional Recruitment" /></a>
               <a href="https://geizhals.at/" target="_new"><img class="sponsorsimage" src="[% make_uri_info('css/logos/geizhals.png') %]" alt="Geizhals" title="Geizhals" /></a>
               <a href="http://www.perl.careers" target="_new"><img class="sponsorsimagelrg" src="[% make_uri_info('css/logos/perlcareers.png') %]" alt="Perl Careers" title="Perl Recrtuitment" /></a>
-              <a href="https://www.pirum.com/" target="_new"><img class="sponsorsimage" src="[% make_uri_info('css/logos/perlservices.png') %]" alt="Perl Services" title="Professional Perl Programming" /></a>
-              <a href="https://www.perl-services.de/" target="_new"><img class="sponsorsimage" src="[% make_uri_info('css/logos/pirum.png') %]" alt="Pirum" title="Global Leaders in Securities Finance Automation" /></a>
+              <a href="https://www.perl-services.de/" target="_new"><img class="sponsorsimage" src="[% make_uri_info('css/logos/perlservices.png') %]" alt="Perl Services" title="Professional Perl Programming" /></a>
+              <a href="https://www.pirum.com/" target="_new"><img class="sponsorsimage" src="[% make_uri_info('css/logos/pirum.png') %]" alt="Pirum" title="Global Leaders in Securities Finance Automation" /></a>
               <a href="http://shadow.cat" target="_new"><img class="sponsorsimagelrg" src="[% make_uri_info('css/logos/shadowcat.png') %]" alt="Shadowcat Systems Limited" title="Perl Consultancy with a Clue and a Commit Bit" /></a>
             </div>
             <div class="col">
@@ -82,7 +82,7 @@
     <div class="row no-gutters">
       <div class="col">
         <div class="footer">
-          <a href="https://twitter.com/share" class="twitter-share-button" data-text="London Perl Workshop 2015:" data-via="shadowcat_mdk" data-hashtags="lpw2015">Tweet</a>
+          <a href="https://twitter.com/share" class="twitter-share-button" data-text="2018 European Perl Conference #TPCiG:" data-via="shadowcat_mdk" data-hashtags="lpw2015">Tweet</a>
           <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
           Powered by <a href="http://act.mongueurs.net/">Act</a>
         </div>
