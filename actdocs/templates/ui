@@ -10,6 +10,7 @@
 <meta property="og:title" content="The Perl Conference - Glasgow 2018" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://act.perlconference.org/tpc-2018-glasgow/" />
+<meta property="og:description" content="#TPCiG is the European Perl Conference for 2018: bit.ly/TPCiG" />
 <meta property="og:image" content="http://act.perlconference.org/tpc-2018-glasgow/css/logos/lrg-conf-logo.png" />
 <!-- OpenId -->
 [% IF openid %]
