@@ -10,6 +10,7 @@
 <meta property="og:title" content="The Perl Conference - Glasgow 2018" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://act.perlconference.org/tpc-2018-glasgow/" />
+<meta property="og:description" content="#TPCiG is the European Perl Conference for 2018: bit.ly/TPCiG" />
 <meta property="og:image" content="http://act.perlconference.org/tpc-2018-glasgow/css/logos/lrg-conf-logo.png" />
 <!-- OpenId -->
 [% IF openid %]
@@ -70,7 +71,7 @@
             </div>
             <div class="col">
               <h3>Community</h3>
-              <a href="http://enlightenedperl.org/" target="_new"><img class="sponsorsimagelrg" src="[% make_uri_info('css/logos/epo.png') %]" alt="Enlightened Perl Organisation" title="Non profit association for Perl promotion" /></a>
+              <a href="http://enlightenedperl.org/" target="_new"><img class="sponsorsimage" src="[% make_uri_info('css/logos/epo.png') %]" alt="Enlightened Perl Organisation" title="Non profit association for Perl promotion" /></a>
               <a href="http://perl6.org/" target="_new"><img class="sponsorsimagelrg" src="[% make_uri_info('css/logos/perl6.png') %]" alt="Perl6 Community" title="Non profit association for Perl promotion" /></a>
               <a href="http://perlweekly.com/" target="_new"><img class="sponsorsimage" src="[% make_uri_info('css/logos/perl_weekly.png') %]" alt="Perl Weekly" title="A weekly source of Perl News" /></a>
             </div>
@@ -82,7 +83,7 @@
     <div class="row no-gutters">
       <div class="col">
         <div class="footer">
-          <a href="https://twitter.com/share" class="twitter-share-button" data-text="2018 European Perl Conference #TPCiG:" data-via="shadowcat_mdk" data-hashtags="lpw2015">Tweet</a>
+          <a href="https://twitter.com/share" class="twitter-share-button" data-text="2018 European Perl Conference #TPCiG:" data-via="shadowcat_mdk" data-hashtags="TPCiG">Tweet</a>
           <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
           Powered by <a href="http://act.mongueurs.net/">Act</a>
         </div>
