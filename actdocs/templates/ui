@@ -68,7 +68,7 @@
               <a href="https://www.perl-services.de/" target="_new"><img class="sponsorsimage" src="[% make_uri_info('css/logos/perlservices.png') %]" alt="Perl Services" title="Professional Perl Programming" /></a>
               <a href="https://www.pirum.com/" target="_new"><img class="sponsorsimage" src="[% make_uri_info('css/logos/pirum.png') %]" alt="Pirum" title="Global Leaders in Securities Finance Automation" /></a>
               <a href="https://shadow.cat" target="_new"><img class="sponsorsimagelrg" src="[% make_uri_info('css/logos/shadowcat.png') %]" alt="Shadowcat Systems Limited" title="Perl Consultancy with a Clue and a Commit Bit" /></a>
-              <a href="http:/stickeryou.com" target="_new"><img class="sponsorsimage" src="[% make_uri_info('css/logos/stickeryou.png') %]" alt="StickerYou custom Sticker Sheets" title="StickerYou custom stickers and decals" /></a>
+              <a href="https://www.stickeryou.com" target="_new"><img class="sponsorsimage" src="[% make_uri_info('css/logos/stickeryou.png') %]" alt="StickerYou custom Sticker Sheets" title="StickerYou custom stickers and decals" /></a>
             </div>
             <div class="col">
               <h3>Community</h3>
