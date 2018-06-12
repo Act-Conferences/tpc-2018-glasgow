@@ -63,7 +63,7 @@
               <h3>Corporate</h3>
               <a href="http://cpanel.com" target="_new"><img class="sponsorsimagelrg" src="[% make_uri_info('css/logos/cpanel3.png') %]" alt="cPanel" title="Complete Web Host Management"/></a> 
               <a href="http://www.eligo.co.uk/" target="_new"><img class="sponsorsimagelrg" src="[% make_uri_info('css/logos/eligo.png') %]" alt="Eligo" title="Professional Recruitment" /></a>
-              <a href="http://www.geekuni.com/" target="_new"><img class="sponsorsimage" src="[% make_uri_info('css/logos/geekuni.png') %]" alt="Geek University, Perl Courses online" title="Learn Perl Online with a Professional courset" /></a>
+              <a href="https://geekuni.com" target="_new"><img class="sponsorsimage" src="[% make_uri_info('css/logos/geekuni.jpg') %]" alt="Geekuni, Perl Courses online" title="Online Perl courses for professionals" /></a>
               <a href="https://geizhals.at/" target="_new"><img class="sponsorsimage" src="[% make_uri_info('css/logos/geizhals.png') %]" alt="Geizhals" title="Geizhals" /></a>
               <a href="http://www.perl.careers" target="_new"><img class="sponsorsimagelrg" src="[% make_uri_info('css/logos/perlcareers.png') %]" alt="Perl Careers" title="Perl Recrtuitment" /></a>
               <a href="https://www.perl-services.de/" target="_new"><img class="sponsorsimage" src="[% make_uri_info('css/logos/perlservices.png') %]" alt="Perl Services" title="Professional Perl Programming" /></a>
