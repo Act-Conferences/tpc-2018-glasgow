@@ -2,16 +2,17 @@
 <html>
 
 <head>
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Document Metadata -->
 <meta http-equiv="Content-Language" content="[% global.request.language %]" />
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:image" content="http://act.perlconference.org/tpc-2018-glasgow/css/logos/lrg-conf-logo.png"/>
-<meta property="og:title" content="[% IF title; title; ELSE %]The Perl Conference - Glasgow 2018[% END %]" />
+<meta name="twitter:image" content="[% global.config.general_full_uri %]css/logos/lrg-conf-logo.png"/>
+<meta property="og:title" content="[% IF title; title; %] :: [% END %][% global.conference.name %]" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://act.perlconference.org/tpc-2018-glasgow/" />
+<meta property="og:url" content="[% global.request.base_url %][% global.request.r.uri %] " />
 <meta property="og:description" content="#TPCiG is the European Perl Conference for 2018: bit.ly/TPCiG" />
-<meta property="og:image" content="http://act.perlconference.org/tpc-2018-glasgow/css/logos/lrg-conf-logo.png" />
+<meta property="og:image" content="[% global.config.general_full_uri %]css/logos/lrg-conf-logo.png" />
 <!-- OpenId -->
 [% IF openid %]
 <link rel="openid.server" href="[% global.request.base_url %][% make_uri('openid') %]" />
@@ -19,7 +20,7 @@
 <!-- Atom news feed -->
 <link rel="alternate" type="application/atom+xml" title="[% global.conference.name %]"
       href="[% global.request.base_url %][% make_uri_info( 'atom', global.request.language ) %].xml" />
-[%- IF title -%]<title>[% title  %]</title>[%- END -%]
+<title>[% IF title; title %] :: [% END %][% global.conference.name %]</title>
 
 <!-- CSS Stylesheets -->
 <link rel="stylesheet" type="text/css" href="[% make_uri_info('lib/bootstrap/css/bootstrap.min.css') %]" />
