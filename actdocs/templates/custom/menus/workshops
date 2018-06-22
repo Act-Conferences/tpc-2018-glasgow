@@ -1,3 +1,15 @@
-<li class="nav-item">
-  <a class="nav-link" href="[% make_uri('workshops.html') %]">Workshops</a>
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+    Workshops
+  </a>
+
+  <div class="dropdown-menu dropdown-menu-right">
+    <a class="dropdown-item" href="[% make_uri('workshops-monday.html') %]">
+        Monday
+    </a>
+    <a class="dropdown-item" href="[% make_uri('workshops.html') %]">
+        Tuesday
+    </a>
+  </div>
 </li>
+
