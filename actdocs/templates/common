@@ -62,7 +62,7 @@
                        [% END %]
                 />
             [% END;
-            user_info(t.user); ' - '; talk_confirmed_link(t);
+            talk_confirmed_link(t); '<br>'; user_info(t.user); '<br>';
             ' ('; t.duration; '&nbsp;'; loc('min');
             IF global.config.talks_languages;
                 ', '; global.config.talks_languages.${t.lang};
