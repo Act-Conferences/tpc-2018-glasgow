@@ -3,6 +3,7 @@
   [% PROCESS custom/menus/admin %]
   [% PROCESS custom/menus/talks %]
   [% PROCESS custom/menus/workshops %]
+  [% PROCESS custom/menus/pricing %]
   [% PROCESS custom/menus/wiki %]
   [% PROCESS custom/menus/news %]
   [% PROCESS custom/menus/users %]
