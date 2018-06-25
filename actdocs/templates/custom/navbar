@@ -2,7 +2,7 @@
   <nav id="upper-navbar" class="navbar navbar-expand-md navbar-light bg-light">
     <a href="[% make_uri %]" class="navbar-brand">
       <div class="navbar-brand-image d-none d-md-inline-block">
-        <img class="mw-100" src="[% make_uri_info('css/logos/conf-logo-scale.png') %]">
+        <img class="mw-100" src="[% make_uri_info('css/logos/conf-logo-scale.png') %]" alt="TCP Logo">
       </div>
       <span>The Perl Conference - Glasgow</span>
     </a>
