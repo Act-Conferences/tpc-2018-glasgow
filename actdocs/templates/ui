@@ -47,6 +47,20 @@
     <div class="row no-gutters">
       <div class="col">
         <div id="top-content" class="content">
+          <div class="row toprow">
+            <div class="col">
+[% IF global.request.r.uri == '/' -%]
+              <img src="/css/logos/lrg-conf-logo.png" class="lrg-conf-logo">
+[% ELSE -%]
+              &nbsp;
+[% END -%]
+            </div>
+            <div class="col">
+              <h1 class="welcome">
+                [% h1 || title %]
+              </h1>
+            </div>
+          </div>
           [% content %]
         </div>
       </div>
@@ -62,7 +76,7 @@
             <div class="w-100"></div>
             <div class="col">
               <h3>Corporate</h3>
-              <a href="http://cpanel.com" target="_new"><img class="sponsorsimagelrg" src="[% make_uri_info('css/logos/cpanel3.png') %]" alt="cPanel" title="Complete Web Host Management"/></a> 
+              <a href="http://cpanel.com" target="_new"><img class="sponsorsimagelrg" src="[% make_uri_info('css/logos/cpanel3.png') %]" alt="cPanel" title="Complete Web Host Management"/></a>
               <a href="http://www.eligo.co.uk/" target="_new"><img class="sponsorsimagelrg" src="[% make_uri_info('css/logos/eligo.png') %]" alt="Eligo" title="Professional Recruitment" /></a>
               <a href="https://geekuni.com" target="_new"><img class="sponsorsimage" src="[% make_uri_info('css/logos/geekuni.png') %]" alt="Geekuni, Perl Courses online" title="Online Perl courses for professionals" /></a>
               <a href="https://geizhals.at/" target="_new"><img class="sponsorsimage" src="[% make_uri_info('css/logos/geizhals.png') %]" alt="Geizhals" title="Geizhals" /></a>
