@@ -52,7 +52,7 @@
 [% IF global.request.r.uri == 'index.html' -%]
               <img src="/css/logos/lrg-conf-logo.png" class="lrg-conf-logo">
 [% ELSE -%]
-              &nbsp;
+              &nbsp; <!-- [% global.require.r.uri %] -->
 [% END -%]
             </div>
             <div class="col">
