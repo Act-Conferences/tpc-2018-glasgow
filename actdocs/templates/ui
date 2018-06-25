@@ -10,7 +10,7 @@
 <meta name="twitter:image" content="[% global.config.general_full_uri %]css/logos/lrg-conf-logo.png"/>
 <meta property="og:title" content="[% IF title; title; %] :: [% END %][% global.conference.name %]" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="[% global.request.base_url %][% global.request.r.unparsed_uri %]" />
+<meta property="og:url" content="[% global.request.base_url %][% global.request.r.uri %]" />
 <meta property="og:description" content="#TPCiG is the European Perl Conference for 2018: bit.ly/TPCiG" />
 <meta property="og:image" content="[% global.config.general_full_uri %]css/logos/lrg-conf-logo.png" />
 <!-- OpenId -->
