@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="[% global.request.language %]">
 
 <head>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Document Metadata -->
-<meta http-equiv="Content-Language" content="[% global.request.language %]" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:image" content="[% global.config.general_full_uri %]css/logos/lrg-conf-logo.png"/>
 <meta property="og:title" content="[% IF title; title; %] :: [% END %][% global.conference.name %]" />
@@ -50,7 +49,7 @@
           <div class="row toprow">
             <div class="col">
 [% IF show_logo -%]
-              <img src="css/logos/lrg-conf-logo.png" class="lrg-conf-logo">
+              <img src="css/logos/lrg-conf-logo.png" class="lrg-conf-logo" alt="TPC Logo">
 [% ELSE -%]
               &nbsp; <!-- no logo here -->
 [% END -%]
