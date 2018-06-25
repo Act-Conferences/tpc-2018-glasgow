@@ -50,7 +50,7 @@
           <div class="row toprow">
             <div class="col">
 [% IF show_logo -%]
-              <img src="/css/logos/lrg-conf-logo.png" class="lrg-conf-logo">
+              <img src="css/logos/lrg-conf-logo.png" class="lrg-conf-logo">
 [% ELSE -%]
               &nbsp; <!-- no logo here -->
 [% END -%]
