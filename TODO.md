@@ -8,5 +8,5 @@ A list of things we might want to improve. Feel free to add stuff (or do stuff!)
 * [ ] Add structured data (at least on the schedule pages)
 * [ ] Do we need the workshop pages, now the schedule pages are live?
 * [ ] Tidy up the front page - make it less of an info-dump
-* [ ] Set up Google Analytics
+* [ ] ~~Set up Google Analytics~~ (doesn't work because the site is a subdirectory, not a subdomain)
 * [ ] Set up Google Webmaster Tools
