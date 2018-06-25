@@ -49,7 +49,7 @@
         <div id="top-content" class="content">
           <div class="row toprow">
             <div class="col">
-[% IF global.request.r.uri == 'index.html' -%]
+[% IF global.request.r.uri == '' -%]
               <img src="/css/logos/lrg-conf-logo.png" class="lrg-conf-logo">
 [% ELSE -%]
               &nbsp; <!-- [% global.require.r.uri %] -->
