@@ -9,6 +9,6 @@ A list of things we might want to improve. Feel free to add stuff (or do stuff!)
 * [ ] Do we need the workshop pages, now the schedule pages are live?
 * [ ] Tidy up the front page - make it less of an info-dump
 * [ ] ~~Set up Google Analytics~~ (doesn't work because the site is a subdirectory, not a subdomain)
-* [ ] Set up Google Webmaster Tools
+* [x] Set up Google Webmaster Tools (let me know if you want access)
 * [ ] Valid HTML (in progress)
 * [ ] Check for only semantic HTML
