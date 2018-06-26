@@ -6,6 +6,14 @@ body {
   font-size: 1.1em;
 }
 
+#tpc-logo {
+	width: 10em;
+}
+
+.flex-grow {
+	flex-grow: 1;
+}
+
 .pagetitle {
     clear: both;
     margin: 0;
