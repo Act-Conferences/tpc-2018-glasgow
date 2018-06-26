@@ -1,15 +1,17 @@
 <div align="center">
 
-[% rowcount = 2; # name and country
-   rowcount += 1 IF user.town;
-   rowcount += 1 IF user.pm_group;
-   rowcount += 1 IF user.company;
-   rowcount += 1 IF NOT user.email_hide OR global.request.user.is_users_admin;
-   rowcount += 1 IF user.web_page;
-   rowcount += 1 IF user.pause_id;
-   rowcount += 1 IF user.monk_id;
-   rowcount += 1 IF user.im
-   rowcount += 1 IF user.gpg_key_id;
+[% span_rows = 2;
+   IF user.town;
+     span_rows = span_rows + 1;
+   END;
+   span_rows = span_rows + 1 IF user.pm_group;
+   span_rows = span_rows + 1 IF user.company;
+   span_rows = span_rows + 1 IF NOT user.email_hide OR global.request.user.is_users_admin;
+   span_rows = span_rows + 1 IF user.web_page;
+   span_rows = span_rows + 1 IF user.pause_id;
+   span_rows = span_rows + 1 IF user.monk_id;
+   span_rows = span_rows + 1 IF user.im;
+   span_rows = span_rows + 1 IF user.gpg_key_id;
 -%]
 
 <table class="table table-sm user">
@@ -33,7 +35,7 @@
      "(&lrm;${user.nick_name}&lrm;)" IF user.nick_name;
    END %]
     </td>
-    <td rowspan="[% rowcount %]">
+    <td rowspan="[% span_rows %]">
       [% IF user.photo_name -%]
       <img class="userpic" src="/[% global.config.general_dir_photos %]/[% user.photo_name %]" alt="Photo">
       [%- ELSE %]
