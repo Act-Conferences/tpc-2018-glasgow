@@ -49,7 +49,7 @@
 </center>
 [% CASE DEFAULT %]
 <center>
-<table border="1" cellspacing="0" cellpadding="4">
+<table class="table table-striped table-hover">
  <tr>
   <th>{{Countries}}</th>
   <th>{{Monger groups}}</th>
@@ -57,7 +57,7 @@
  <tr>
   <!-- Countries -->
   <td>
-   <table cellpadding="4">
+   <table class="table">
     [% FOREACH c = stats.countries %]
     <tr>
      [% IF loop.count == 1 %]
@@ -75,7 +75,7 @@
   </td>
   <!-- PM groups -->
   <td>
-   <table cellpadding="4">
+   <table class="table">
     [% '&nbsp;' UNLESS stats.pm.size %]
     [% FOREACH pm = stats.pm %]
     <tr>
