@@ -76,7 +76,7 @@
   <!-- PM groups -->
   <td>
    <table class="table">
-    [% '&nbsp;' UNLESS stats.pm.size %]
+    [%# '&nbsp;' UNLESS stats.pm.size %]
     [% FOREACH pm = stats.pm %]
     <tr>
      [% IF loop.count == 1 %]
