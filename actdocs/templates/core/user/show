@@ -48,7 +48,7 @@
      loc("salutation_${user.salutation}") IF user.salutation; ' ';
      user.first_name; ' ';
      user.last_name;
-     "(&lrm;${user.nick_name}&lrm;)" IF user.nick_name;
+     " (&lrm;${user.nick_name}&lrm;)" IF user.nick_name;
    END %]
     </td>
     <td rowspan="[% span_rows %]">
