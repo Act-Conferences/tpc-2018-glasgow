@@ -84,35 +84,25 @@
 <body>
   [% PROCESS custom/navbar %]
   <div class="container tpc-content">
-
-    <!-- div class="row no-gutters">
-      <div class="col">
-        <div class="tag-line">
-          [%- IF title -%][% title %][%- END -%]
-        </div>
-      </div>
-    </div -->
-
-    <div class="row no-gutters">
-      <div class="col">
-        <div id="top-content" class="content">
-          <div class="row toprow">
-            <div class="col">
+    <div class="row">
 [% IF show_logo -%]
-              <img src="css/logos/lrg-conf-logo.png" class="lrg-conf-logo" alt="TPC Logo">
-[% ELSE -%]
-              &nbsp; <!-- no logo here -->
-[% END -%]
-            </div>
-            <div class="col">
-              <h1 class="welcome">
-                [% h1 || title %]
-              </h1>
-            </div>
-          </div>
-          [% content %]
-        </div>
+      <div class="col-md-6">
+        <img class="w-100" src="css/logos/lrg-conf-logo.png" alt="TPC Logo">
       </div>
+      <div class="col-md-6 align-self-center">
+        <h1>
+          [% h1 || title %]
+        </h1>
+      </div>
+[% ELSE -%]
+      <div class="col">
+        <h1>
+          [% h1 || title %]
+        </h1>
+      </div>
+[% END -%]
+    </div>
+    [% content %]
     </div>
 
     <div class="row tpc-sponsors mt-3 pt-3">
