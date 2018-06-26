@@ -15,7 +15,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <a href="[% make_uri %]" class="navbar-brand">
-          <span>The Perl Conference - Glasgow</span>
+          <span><span class="d-none d-md-inline">The Perl Conference</span><span class="d-block d-md-none">TPC</span> - Glasgow</span>
         </a>
       </div>
       <div class="collapse navbar-collapse" id="lower-navbar">
