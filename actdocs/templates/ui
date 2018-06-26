@@ -102,9 +102,7 @@
       </div>
 [% END -%]
     </div>
-    <div class="row">
     [% content %]
-    </div>
     <div class="row tpc-sponsors mt-3 pt-3">
       <div class="col-6 text-center">
         <h3 class="tpc-sponsor-title">
