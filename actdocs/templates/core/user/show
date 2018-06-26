@@ -65,7 +65,7 @@
 [% IF user.company %]
   <tr>
     <th>{{Company}}:</th>
-    <td">
+    <td>
          [% "<a href=\"${user.company_url}\">" IF user.company_url %][% user.company %][% '</a>' IF user.company_url %]
     </td>
   </tr>
@@ -73,7 +73,7 @@
 [%- IF NOT user.email_hide OR global.request.user.is_users_admin %]
   <tr>
     <th>{{Email}}:</th>
-    <td"><a href="mailto:[% user.email %]">[% user.email %]</a></td>
+    <td><a href="mailto:[% user.email %]">[% user.email %]</a></td>
   </tr>
 [% END %]
 [%- IF user.web_page %]
