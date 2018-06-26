@@ -207,3 +207,7 @@ table.user {
   margin: 20px auto;
   width: 70%;
 }
+
+.bg-dark-blue {
+	background-color: darkblue;
+}

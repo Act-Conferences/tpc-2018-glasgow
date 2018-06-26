@@ -31,7 +31,7 @@
 <link rel="shortcut icon" type="image/png" href="/favicon.png" />
 
 <!-- JSON-LD -->
-<script type='application/ld+json'> 
+<script type='application/ld+json'>
 {
   "@context": "http://www.schema.org",
   "@type": "Event",
@@ -145,18 +145,14 @@
         </div>
       </div>
     </div>
-
-    <div class="row no-gutters">
-      <div class="col">
-        <div class="footer">
-          <a href="https://twitter.com/share" class="twitter-share-button" data-text="2018 European Perl Conference #TPCiG:" data-via="shadowcat_mdk" data-hashtags="TPCiG">Tweet</a>
-          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-          Powered by <a href="http://act.mongueurs.net/">Act</a>
-        </div>
-      </div>
-    </div>
-
   </div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark-blue">
+    <div class="ml-auto">
+      <a href="https://twitter.com/share" class="twitter-share-button" data-text="2018 European Perl Conference #TPCiG:" data-via="shadowcat_mdk" data-hashtags="TPCiG">Tweet</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      Powered by <a href="http://act.mongueurs.net/">Act</a>
+    </div>
+  </nav>
   <!-- JavaScript sugar - loaded at the end -->
   <script src="[% make_uri_info('lib/jquery/js/jquery-3.2.1.min.js') %]"></script>
   <script src="[% make_uri_info('lib/popper/js/popper.min.js') %]"></script>
