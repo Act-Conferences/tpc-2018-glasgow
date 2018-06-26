@@ -19,10 +19,9 @@
 <p>
  {{Note: the country total is not always equal to the city total.}}
 </p>
-<center>
 [% count = 0 %]
 [% cols = 3 %]
-<table border="1" cellspacing="0" cellpadding="4">
+<table class="table table-striped table-hover">
  <tr>
   <th colspan="[% cols %]">{{Cities}}</th>
  </tr>
@@ -33,12 +32,12 @@
   [% FOREACH c = stats.countries %]
   [% UNLESS count %]<tr>[% END %]
    [% UNLESS stats.towns.${c.iso} %][% NEXT %][% END %]
-   <td valign="top"><table width="100%">
+   <td><table width="100%">
    [% FOREACH t = stats.towns.${c.iso} %]
    [% IF loop.count == 1 %]
     <tr><th colspan="2"><a href="[% make_uri('search', 'country', c.iso) %]">[% c.name %]</a> [% c.count %]&nbsp;([% c.committed %])</th></tr>
    [% END %]
-    <tr><td><a href="[% make_uri('search', 'town', t.name, 'country', c.iso) %]">[% t.name %]</a></td><td align="right">[% t.count %]&nbsp;([% t.committed %])</td></tr>
+    <tr><td><a href="[% make_uri('search', 'town', t.name, 'country', c.iso) %]">[% t.name %]</a></td><td>[% t.count %]&nbsp;([% t.committed %])</td></tr>
    [% END %]
    </td></tr></table></td>
    [% IF count == cols - 1 %]</tr>[% END %]
@@ -46,47 +45,45 @@
   [% END %]
   </tr>
 </table>
-</center>
 [% CASE DEFAULT %]
-<center>
-<table border="1" cellspacing="0" cellpadding="4">
+<table class="table table-striped table-hover">
  <tr>
   <th>{{Countries}}</th>
   <th>{{Monger groups}}</th>
  </tr>
  <tr>
   <!-- Countries -->
-  <td valign="top">
-   <table cellpadding="4">
+  <td>
+   <table class="table">
     [% FOREACH c = stats.countries %]
     <tr>
      [% IF loop.count == 1 %]
-     <th valign="top" align="left">
+     <th>
      <a href="[% make_uri('search', 'country', c.iso) %]">[% c.name %]</a>
-     </th><th valign="top" align="right">[% c.count %]&nbsp;([% c.committed %])</th>
+     </th><th>[% c.count %]&nbsp;([% c.committed %])</th>
      [% ELSE %]
-     <td valign="top" align="left">
+     <td>
      <a href="[% make_uri('search', 'country', c.iso) %]">[% c.name %]</a>
-     </td><td valign="top" align="right">[% c.count %]&nbsp;([% c.committed %])</td>
+     </td><td>[% c.count %]&nbsp;([% c.committed %])</td>
      [% END %]
     </tr>
     [% END %]
    </table>
   </td>
   <!-- PM groups -->
-  <td valign="top">
-   <table cellpadding="4">
-    [% '&nbsp;' UNLESS stats.pm.size %]
+  <td>
+   <table class="table">
+    [%# '&nbsp;' UNLESS stats.pm.size %]
     [% FOREACH pm = stats.pm %]
     <tr>
      [% IF loop.count == 1 %]
-      <th valign="top" align="left">
+      <th>
       <a href="[% make_uri('search', 'pm_group', pm.name) %]">[% pm.name %]</a></th>
-      <th align="right">[% pm.count %]&nbsp;([% pm.committed %])</th>
+      <th>[% pm.count %]&nbsp;([% pm.committed %])</th>
      [% ELSE %]
-      <td valign="top" align="left">
+      <td>
       <a href="[% make_uri('search', 'pm_group', pm.name) %]">[% pm.name %]</a></td>
-      <td align="right">[% pm.count %]&nbsp;([% pm.committed %])</td>
+      <td>[% pm.count %]&nbsp;([% pm.committed %])</td>
      [% END %]
      </tr>
     [% END %]
@@ -94,8 +91,6 @@
   </td>
  </tr>
 </table>
-</center>
 [% END %]
 
-</form>
 [% END %]
