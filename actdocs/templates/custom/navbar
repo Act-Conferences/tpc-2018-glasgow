@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-md navbar-light bg-light">
   <div class="container">
     <a class="navbar-brand-image d-none d-md-block" href="[% make_uri %]">
-      <img id="tpc-logo" src="[% make_uri_info('css/logos/conf-logo-scale.png') %]" alt="TCP Logo">
+      <img id="tpc-logo" class="mw-100" src="[% make_uri_info('css/logos/conf-logo-scale.png') %]" alt="TCP Logo">
     </a>
     <div class="flex-column flex-grow">
       <div>
