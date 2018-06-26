@@ -1,0 +1,166 @@
+<div align="center">
+
+[% rowcount = 2; # name and country
+   rowcount += 1 IF user.town;
+   rowcount += 1 IF user.pm_group;
+   rowcount += 1 IF user.company;
+   rowcount += 1 IF NOT user.email_hide OR global.request.user.is_users_admin;
+   rowcount += 1 IF user.web_page;
+   rowcount += 1 IF user.pause_id;
+   rowcount += 1 IF user.monk_id;
+   rowcount += 1 IF user.im
+   rowcount += 1 IF user.gpg_key_id;
+-%]
+
+<table class="table table-sm user">
+
+[% IF global.request.user.is_staff %]
+  <tr>
+    <td>{{Login}}</td>
+    <td>&nbsp;</td>
+    <td>[% login %]</td>
+</tr>
+[% END %]
+  <tr>
+    <th>{{Name}}:</th>
+    <td>
+[% IF user.pseudonymous;
+     user.nick_name;
+   ELSE;
+     loc("salutation_${user.salutation}") IF user.salutation;
+     user.first_name;
+     user.last_name;
+     "(&lrm;${user.nick_name}&lrm;)" IF user.nick_name;
+   END %]
+    </td>
+    <td rowspan="[% rowcount %]">
+      [% IF user.photo_name -%]
+      <img class="userpic" src="/[% global.config.general_dir_photos %]/[% user.photo_name %]" alt="Photo">
+      [%- ELSE %]
+      <img src="http://www.gravatar.com/avatar/[% user.md5_email %]?s=100&d=404" alt="Photo">
+      [% END %]
+    </td>
+  </tr>
+[%- IF user.town %]
+  <tr>
+    <th>{{City}}:</th>
+    <td>[% user.town %]</td>
+  </tr>
+[% END %]
+  <tr>
+    <th>{{Country}}:</th>
+    <td>[% country %]</td>
+  </tr>
+[%- IF user.pm_group %]
+  <tr>
+    <th>{{Perl mongers group}}:</th>
+    <td>
+      [% IF user.pm_group_url %]<a href="[% user.pm_group_url %]">[% user.pm_group %]</a>
+      [% ELSE %][% user.pm_group %][% END %]
+    </td>
+  </tr>
+[% END %]
+[% IF user.company %]
+  <tr>
+    <th>{{Company}}:</th>
+    <td">
+         [% "<a href=\"${user.company_url}\">" IF user.company_url %][% user.company %][% '</a>' IF user.company_url %]
+    </td>
+  </tr>
+[% END %]
+[%- IF NOT user.email_hide OR global.request.user.is_users_admin %]
+  <tr>
+    <th>{{Email}}:</th>
+    <td"><a href="mailto:[% user.email %]">[% user.email %]</a></td>
+  </tr>
+[% END %]
+[%- IF user.web_page %]
+  <tr>
+    <th>{{Web page}}:</th>
+    <td align="left"><a href="[% user.web_page %]">[% user.web_page %]</a></td>
+  </tr>
+[% END %]
+[%- IF user.pause_id %]
+  <tr>
+    <th><a href="https://pause.perl.org/">PAUSE</a> id:</th>
+    <td><a href="https://metacpan.org/author/[% user.pause_id %]/">[% user.pause_id %]</a></td>
+  </tr>
+[% END %]
+[%- IF user.monk_id %]
+  <tr>
+    <th>Perlmonks id:</th>
+    <td><a href="http://perlmonks.org/index.pl?node_id=[% user.monk_id %]">[% user.monk_name OR user.monk_id %]</a></td>
+  </tr>
+[% END %]
+[%- IF user.im %]
+  <tr>
+    <th>{{IM}}:</th>
+    <td align="left">[% user.im %]</td>
+  </tr>
+[% END %]
+[%- IF user.gpg_key_id %]
+  <tr>
+    <th>{{GPG key ID}}:</th>
+    <td><a href="http://pgp.mit.edu:11371/pks/lookup?op=vindex&search=0x[% user.gpg_key_id %]">0x[% user.gpg_key_id %]</a></td>
+  </tr>
+[% END %]
+
+[% IF talks.size %]
+  <tr>
+    <th>[% loc('Talk', talks.size) %]:</th>
+    <td>
+    [% accepted = 0;
+    FOREACH t = talks; IF t.accepted; accepted = 1; LAST; END; END;
+    IF accepted %]
+      <small>{{Accepted talks are shown in bold type.}}</small>
+    [% END %]
+      <ul>
+      [% FOREACH t = talks %]
+	    <li>[% talk_link(t) %]
+      ([% IF t.duration ; t.duration %]
+      {{minutes}}[% ELSE %]{{Lightning talk}}[% END %])
+      [% talk_modify_link(t) %]</li>
+       [% END %]
+      </ul>
+    </td>
+  </tr>
+[% END %]
+
+[%- IF bio.keys.size %]
+  <tr>
+    <th>{{Bio}}:</th>
+    <td>
+    [% FOREACH lang = bio.keys %]
+    <p><b>[% global.config.languages.$lang.name | ucfirst %]</b><br>
+      [% bio.$lang | replace('\n', '<br>') %]</p>
+    [% END %]
+    </td>
+  </tr>
+[% END %]
+[% IF mytalks.size %]
+  <tr>
+    <th>{{Attending talks}}:</th>
+    <td>
+      <ul>
+      [% FOREACH t = mytalks %]
+        <li>[% talk_link(t) %]</li>
+      [% END %]
+      </ul>
+    </td>
+  </tr>
+[% END %]
+[% IF conferences.size %]
+  <tr>
+    <th>{{Other Act conferences:}}:</th>
+    <td>
+      <ul>
+[% FOREACH c = conferences %]
+        <li><a href="[% c.url %]user/[% user.user_id %]">[% c.name %]</a></li>
+[% END %]
+      </ul>
+    </td>
+  </tr>
+[% END %]
+</table>
+
+</div>

@@ -188,3 +188,14 @@ background-color: #94bbe2;
 .rounded-10px {
   border-radius: 10px;
 }
+
+img.userpic {
+  border: solid black 1px;
+  padding: 10px;
+  max-width: 100%;
+  height: auto;
+}
+table.user {
+  margin: 20px auto;
+  width: 70%;
+}
