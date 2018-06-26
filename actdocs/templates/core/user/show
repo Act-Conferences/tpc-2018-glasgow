@@ -4,14 +4,30 @@
    IF user.town;
      span_rows = span_rows + 1;
    END;
-   span_rows = span_rows + 1 IF user.pm_group;
-   span_rows = span_rows + 1 IF user.company;
-   span_rows = span_rows + 1 IF NOT user.email_hide OR global.request.user.is_users_admin;
-   span_rows = span_rows + 1 IF user.web_page;
-   span_rows = span_rows + 1 IF user.pause_id;
-   span_rows = span_rows + 1 IF user.monk_id;
-   span_rows = span_rows + 1 IF user.im;
-   span_rows = span_rows + 1 IF user.gpg_key_id;
+   IF user.pm_group;
+     span_rows = span_rows + 1;
+   END;
+   IF user.company;
+     span_rows = span_rows + 1;
+   END;
+   IF (NOT user.email_hide OR global.request.user.is_users_admin);
+     span_rows = span_rows + 1;
+   END;
+   IF user.web_page;
+     span_rows = span_rows + 1;
+   END;
+   IF user.pause_id;
+     span_rows = span_rows + 1;
+   END;
+   IF user.monk_id;
+     span_rows = span_rows + 1;
+   END;
+   IF user.im;
+     span_rows = span_rows + 1;
+   END;
+   IF user.gpg_key_id;
+     span_rows = span_rows + 1;
+   END;
 -%]
 
 <table class="table table-sm user">
@@ -29,8 +45,8 @@
 [% IF user.pseudonymous;
      user.nick_name;
    ELSE;
-     loc("salutation_${user.salutation}") IF user.salutation;
-     user.first_name;
+     loc("salutation_${user.salutation}") IF user.salutation; ' ';
+     user.first_name; ' ';
      user.last_name;
      "(&lrm;${user.nick_name}&lrm;)" IF user.nick_name;
    END %]
