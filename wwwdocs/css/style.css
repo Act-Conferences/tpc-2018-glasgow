@@ -1,9 +1,49 @@
+
 body {
-  background: rgba(255, 255, 255, 1);
+  background-color: deepskyblue;
+  background-size: 100% auto;
+	background-repeat: no-repeat;
   color: rgba(50, 50, 50, 1);
   font-family: sans-serif;
   margin: 0px auto;
   font-size: 1.1em;
+}
+
+/* Pulled from Bootstrap */
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
+  body {
+    background-image: url(glasgow-fade-0-25.png);
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) {
+  body {
+    background-image: url(glasgow-fade-0-50.png);
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+  body {
+    background-image: url(glasgow-fade-0-75.png);
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  body {
+    background-image: url(glasgow-fade-1.png);
+  }
+}
+
+#tpc-logo {
+	width: 10em;
+}
+
+.flex-grow {
+	flex-grow: 1;
 }
 
 .pagetitle {
@@ -44,6 +84,10 @@ h3 {
     padding: 10px 0px 0px 0px;
 }
 
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+	margin-top: 1.5rem;
+}
+
 .sponsorsimage {
     width: 30%;
     margin: 20px 10px;
@@ -74,18 +118,6 @@ h3 {
 
 #header {
 	background-color: rgba(60, 60, 60, .6);
-}
-
-.navbar {
-	padding: .5rem .2rem;
-}
-
-.nav-row {
-    background: rgba(255, 255, 255, 1) url(cubes2.jpg);
-    opacity: 0.9;
-    position: fixed;
-    top: 0;
-    height: 200px;
 }
 
 .tag-line {
@@ -135,25 +167,6 @@ li.nav-item {
 	color: rgba(235, 232, 98, 1);
 }
 
-.welcome {
-    text-align: center;
-    line-height: 150%;
-    padding: 50px 0px 0px 0px;
-    font-weight: 600;
-    color: rgb(255, 255, 255);
-    /* text-decoration: solid; */
-    text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0, 0, 0, 0.9);
-}
-
-.toprow {
-    background: url(glasgow2.jpg) 100%;
-    padding: 50px 0px;
-}
-
-.middlerow {
-    padding: 20px 10px;
-}
-
 .sponsors {
     clear: both;
     background-color: rgba(222, 220, 220, .8);
@@ -198,4 +211,20 @@ img.userpic {
 table.user {
   margin: 20px auto;
   width: 70%;
+}
+
+.bg-dark-blue {
+	background-color: darkblue;
+}
+
+.tpc-content {
+	background-color: rgba(255,255,255,0.80);
+}
+
+.tpc-sponsors {
+	background-color: #2C2C2C;
+}
+
+.tpc-sponsor-title {
+	color: cyan;
 }
