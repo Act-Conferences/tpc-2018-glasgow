@@ -84,7 +84,7 @@
 [% FOREACH item = news %]
 <li>
   <a href="[% item.link %]"><span class="news-title">[% item.title %]</span>
-  <span class="news-date">[% date_format(item.datetime, '%d %B %Y') %]</span></a>
+  <span class="news-date">([% date_format(item.datetime, '%d %B %Y') %])</span></a>
 </li>
 [% END %]
 </ul>
