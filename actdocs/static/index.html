@@ -80,24 +80,19 @@
 
 [% IF news.size %]
 <h2>Latest News</h2>
+<ul>
 [% FOREACH item = news %]
-<div class="news-entry">
- <h3 class="news-header">
-  <span class="news-date">[% date_format(item.datetime, 'date_short') %]</span>
-  <span class="news-title">[% item.title %]</span>
- </h3>
- <div class="news-text">
-  [% item.content %]
- </div>
-</div>
+<li>
+  <a href="[% item.link %]"><span class="news-date">[% date_format(item.datetime, 'date_short') %]</span>
+  <span class="news-title">[% item.title %]</span></a>
+</li>
 [% END %]
+</ul>
 [% END %]
 
-[% IF more %]
 <p>
  <a href="[% make_uri('news') %]" class="news-link">Older announcements</a>
 </p>
-[% END %]
   </div>
 </div>
 
