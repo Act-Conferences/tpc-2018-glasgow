@@ -51,7 +51,7 @@
      " (&lrm;${user.nick_name}&lrm;)" IF user.nick_name;
    END %]
     </td>
-    <td rowspan="[% span_rows %]">
+    <td width="30%" rowspan="[% span_rows %]">
       [% IF user.photo_name -%]
       <img class="userpic" src="/[% global.config.general_dir_photos %]/[% user.photo_name %]" alt="Photo">
       [%- ELSE %]
