@@ -1,0 +1,18 @@
+[% day = global.request.args.day;
+   UNLESS day AND table.$day.size;          # no valid day specified
+     USE date;                              # default to today
+     day = date.format(date.now, "%F");
+     UNLESS table.$day.size;                # if not valid default to first day
+       day = global.config.talks_schedule_default || table.keys.sort.0;
+     END;
+   END;
+   title = loc('Schedule');
+   IF day;
+     title = title _ ': ' _ date_format(day.replace('$', ' 00:00:00' ), 'date_full');
+   END -%]
+[% WRAPPER ui title = title -%]
+
+<!-- The schedule table -->
+[% PROCESS core/talk/schedule %]
+
+[% END %]

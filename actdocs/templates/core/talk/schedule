@@ -36,7 +36,6 @@
 <form method="POST" action="[% make_uri('updatemytalks') %]" />
 [% END %]
 [% d = day %]
-<h2>[% date_format(d.replace('$', ' 00:00:00' ), 'date_full') | ucfirst %]</h2>
 <table class="table table-striped">
 <thead class="thead-light">
  <tr>
