@@ -1,9 +1,10 @@
-[% IF user.pseudoymous;
+[% name = '';
+   IF user.pseudonymous;
      name = user.nick_name;
-   ELSE
+   ELSE;
      name = user.first_name _ ' ' _ user.last_name;
    END;
-   title = loc("User information") _ nsmr -%]
+   title = loc("User information") _ name -%]
 [% WRAPPER ui title = title, openid = 1 %]
 
 [% PROCESS core/user/show %]
