@@ -5,8 +5,12 @@
      UNLESS table.$day.size;                # if not valid default to first day
        day = global.config.talks_schedule_default || table.keys.sort.0;
      END;
+   END;
+   title = loc('Schedule');
+   IF day;
+     title = title _ ': ' _ date_format(day.replace('$', ' 00:00:00' ), 'date_full');
    END -%]
-[% WRAPPER ui title = loc('Schedule') _ ': ' _ date_format(day.replace('$', ' 00:00:00' ), 'date_full') %]
+[% WRAPPER ui title = title -%]
 
 <!-- The schedule table -->
 [% PROCESS core/talk/schedule %]
