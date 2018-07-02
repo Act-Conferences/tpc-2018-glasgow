@@ -4,8 +4,9 @@
    ELSE;
      name = user.first_name _ ' ' _ user.last_name;
    END;
-   title = loc("User information") _ name -%]
-[% WRAPPER ui title = title, openid = 1 %]
+   title = loc("User information") _ ': ' _ name;
+   h1 = loc("User information") -%]
+[% WRAPPER ui title = title, h1 = h1, openid = 1 %]
 
 [% PROCESS core/user/show %]
 
