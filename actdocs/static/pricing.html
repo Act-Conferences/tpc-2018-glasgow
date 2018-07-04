@@ -1,6 +1,14 @@
 [% WRAPPER ui title = 'Pricing' %]
 
 <div class="row">
+  <div class="col">
+    <div class="alert alert-success d-flex justify-content-between" role="alert">
+      <span class="my-auto">Dont forget to buy your tickets!</span>
+      <a href="[% make_uri('purchase') %]" class="text-white btn btn-primary btn-large ">Buy Tickets</a>
+    </div>
+  </div>
+</div>
+<div class="row">
     <table class="table table-striped">
         <tr>
             <td>Conference Full (Includes Dinner)</td>
@@ -31,8 +39,8 @@
             <td>&#163;[% global.config.product_tutorial_perl6_price1_amount %]</td>
         </tr>
         <tr>
-            <td>Lz Mattijsen - Making Perl 5 Modules work in Perl 6</td>
-            <td>&#163;[% global.config.product_tutorial_perl6_price1_amount %]</td>
+            <td>Liz Mattijsen - Making Perl 5 Modules work in Perl 6</td>
+            <td>&#163;[% global.config.product_tutorial_perl5_in_perl6_price1_amount %]</td>
         </tr>        
         <tr>
             <td>Dave Cross - The Professional Programmer</td>
