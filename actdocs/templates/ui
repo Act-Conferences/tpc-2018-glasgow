@@ -93,7 +93,7 @@
         <h1>
           [% h1 || title %]
         </h1>
-        <a href="[% make_uri('purchase') %]" class="text-white btn btn-primary btn-large ">Buy Tickets</a>
+        <a href="[% make_uri('purchase') %]" class="text-white btn btn-primary btn-large mt-3">Buy Tickets</a>
       </div>
 [% ELSE -%]
       <div class="col">
