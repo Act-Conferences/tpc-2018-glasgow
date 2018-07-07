@@ -1,0 +1,49 @@
+<!-- JSON-LD -->
+<script type='application/ld+json'>
+{
+  "@context": "http://www.schema.org",
+  "@type": "Event",
+  "name": "The Perl Conference, Glasgow 2018",
+  "url": "[% global.config.general_full_uri %]",
+  "description": "The Perl Conference in Glasgow is the European Perl Conference for 2018",
+  "startDate": "2018-08-13T09:30",
+  "endDate": "2018-08-17T19:00",
+  "location": {
+    "@type": "Place",
+    "name": "The Studio",
+    "sameAs": "http://studiovenues.co.uk/venues/glasgow/",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "67, Hope Street",
+      "addressLocality": "Glasgow",
+      "postalCode": "G2 6AE",
+      "addressCountry": "United Kingdom"
+    }
+  },
+  "offers": {
+    "@type": "AggregateOffer",
+    "highPrice": 350,
+    "lowPrice": 50,
+    "offerCount": 3,
+    "offers": [{
+      "@type": "Offer",
+      "description": "Full Conference Ticket",
+      "url": "http://act.perlconference.org/tpc-2018-glasgow/pricing.html",
+      "price": "[% global.config.product_registration_price1_amount %]",
+      "priceCurrency": "GBP"
+    },{
+      "@type": "Offer",
+      "description": "Business Conference Ticket",
+      "url": "http://act.perlconference.org/tpc-2018-glasgow/pricing.html",
+      "price": "[% global.config.product_registration_price2_amount %]",
+      "priceCurrency": "GBP"
+    },{
+      "@type": "Offer",
+      "description": "Student Conference Ticket",
+      "url": "http://act.perlconference.org/tpc-2018-glasgow/pricing.html",
+      "price": "[% global.config.product_registration_price3_amount %]",
+      "priceCurrency": "GBP"
+    }]
+  }
+}
+ </script>
