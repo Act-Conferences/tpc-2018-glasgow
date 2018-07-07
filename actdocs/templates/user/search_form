@@ -48,12 +48,12 @@
 
 [% IF prev %]
   <input type="hidden" name="oprev" value="[% oprev %]" />
-  <button type="submit" name="prev">&lt;&lt;</button>
+  <button type="submit" name="prev" value="&lt;&lt;">&lt;&lt;</button>
 [% END %]
 [% IF next %]
   [% "&nbsp;&nbsp;&nbsp;" IF oprev %]
   <input type="hidden" name="onext" value="[% onext %]" />
-  <button type="submit" name="next">&gt;&gt;</button>
+  <button type="submit" name="next" value="&gt;&gt;">&gt;&gt;</button>
 [% END %]
 
 </form>
