@@ -5,6 +5,11 @@
 
 [%-
 path = global.request.r.uri.replace('index.html$', '');
+IF path.match('/wiki$');
+  IF global.request.args.node;
+    path = path _ '?node=' _ global.request.args.node;
+  END;
+END;
 uri = global.request.base_url _ path;
 IF !canonical_uri;
   canonical_uri = uri;
@@ -18,7 +23,7 @@ END;
 <meta name="twitter:image" content="[% global.config.general_full_uri %]css/logos/lrg-conf-logo.png"/>
 <meta property="og:title" content="[% IF title; title; %] :: [% END %][% global.conference.name %]" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="[% url %]" />
+<meta property="og:url" content="[% uri %]" />
 <meta property="og:description" content="#TPCiG is the European Perl Conference for 2018: bit.ly/TPCiG" />
 <meta property="og:image" content="[% global.config.general_full_uri %]css/logos/lrg-conf-logo.png" />
 <!-- OpenId -->
