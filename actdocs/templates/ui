@@ -4,7 +4,9 @@
 <head>
 
 [%-
-uri = global.request.base_url _ global.request.r.uri;
+path = global.request.r.uri;
+path.replace('^/index.html', '/');
+uri = global.request.base_url _ path;
 IF !canonical_uri;
   canonical_uri = uri;
 END;
