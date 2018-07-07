@@ -5,6 +5,11 @@
 
 [%-
 path = global.request.r.uri.replace('index.html$', '');
+IF path.match('/wiki$');
+  IF global.request.args.node;
+    path = path _ '?node=' _ global.request.args.node;
+  END;
+END;
 uri = global.request.base_url _ path;
 IF !canonical_uri;
   canonical_uri = uri;
