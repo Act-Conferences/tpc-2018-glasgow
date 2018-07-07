@@ -1,6 +1,6 @@
 [% title = loc("News");
    IF news.size == 1;
-     title = title _ ': ' _ news.1.title;
+     title = title _ ': ' _ news.0.title;
    END;
    WRAPPER ui title = title %]
 
