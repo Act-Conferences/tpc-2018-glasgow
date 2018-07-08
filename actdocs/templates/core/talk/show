@@ -121,6 +121,6 @@
 />
 <span id="my-[% talk_id %]-text">{{add to personal schedule}}</span>
 <input type="hidden" name="talk_id" value="[% talk_id %]" />
-<button class="btn type="submit" class="mytalks_submit" value="{{Submit}}" />Submit</button>
+<button class="btn btn-primary" type="submit" class="mytalks_submit" value="{{Submit}}" />Submit</button>
 </form>
 [% END %]
