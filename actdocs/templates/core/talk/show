@@ -1,7 +1,8 @@
 [% INCLUDE js/mytalks.js %]
-<p>
-<b>{{By}}</b>
-[% user_info(user) %]
+<table class="table table-striped table-sm table-hover">
+  <tr>
+    <th>{{By}}:</th>
+    <td>[% user_info(user) %]
 
 [% IF global.request.user.is_talks_admin || global.request.user.user_id == user_id %]
 (<a href="[% make_uri('edittalk', 'talk_id', talk_id) %]">{{edit}}</a>)
@@ -14,34 +15,46 @@
     [% user.pm_group %]
   [% END %]
 [% END %]
-<br />
-
-[% IF lightning %]
-  {{Lightning talk}} <br />
-[% ELSE %]
-  <b>{{Date:}}</b>
+    </td>
+  </tr>
+  <tr>
+    <th>{{Date}}:</th>
+    <td>
+[% IF lightning -%]
+      {{Lightning talk}}
+[% ELSE -%]
   [% IF datetime && ( global.config.talks_show_schedule || global.request.user.is_talks_admin ) %]<a href="[% make_uri( 'schedule?day=' _ date_format(datetime, 'date_iso') ) %]" >[% date_format(datetime, 'date_full') %]</a> [% date_format(datetime, 'time' ) ; ELSE %]
-  {{Not scheduled yet.}}[% END %]<br />
-
-<b>{{Duration:}}</b> [% duration %]
-   {{minutes}}<br />
-[% END %]
+  {{Not scheduled yet.}}[% END %]
+[% END -%]
+    </td>
+  </tr>
+  <tr>
+    <th>{{Duration:}}</th>
+    <td>[% duration %] {{minutes}}</td>
+  </tr>
 
 [% IF global.config.talks_levels %]
-<b>{{Target audience:}}</b>
-  [% level %]<br />
+  <tr>
+    <th>{{Target audience}}:</th>
+    <td>[% level %]</td>
+  </tr>
 [% END %]
 
 [% IF global.config.talks_languages %]
-<b>{{Language:}}</b>
-  [% global.config.talks_languages.$lang %]<br />
+  <tr>
+    <th>{{Language}}:</th>
+    <td>[% global.config.talks_languages.$lang %]</td>
+  </tr>
 [% END %]
 
 [% IF ( global.request.user.is_talks_admin || global.request.user.user_id == user_id)
       AND comment %]
-<b>{{Comment:}}</b>
-[% comment %]<br />
+  <tr>
+    <th>{{Comment}}:</th>
+    <td[% comment %]</td>
+  </tr>
 [% END %]
+</table>
 
 [% showtags(tags, 'talks') %]
 </p>
@@ -90,7 +103,7 @@
 [% IF attendees.size %]
 <b>{{Attended by:}}</b>
 [% FOREACH u IN attendees %]
-  [% user_info(u) %],
+  [% user_info(u) %][% UNLESS loop.last %], [% END %]
 [% END %]
 [% END %]
 
@@ -108,6 +121,6 @@
 />
 <span id="my-[% talk_id %]-text">{{add to personal schedule}}</span>
 <input type="hidden" name="talk_id" value="[% talk_id %]" />
-<input type="submit" class="mytalks_submit" value="{{Submit}}" />
+<button class="btn type="submit" class="mytalks_submit" value="{{Submit}}" />Submit</button>
 </form>
 [% END %]
