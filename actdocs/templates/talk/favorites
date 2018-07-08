@@ -18,7 +18,7 @@
     <td>[% f.count %]</td>
     <td><a href="[% make_uri_info('user', f.user.user_id) %]">
         [% user_info(f.user) %]
-    </a></td>
+    </td>
     <td>[% talk_link(f.talk);
            IF f.talk.track_id %] [<a href="[% make_uri('talks') %]#[% f.talk.track_id %]">[%
                tracks.${f.talk.track_id}.title.split('\W').0 %]</a>][% END %]
