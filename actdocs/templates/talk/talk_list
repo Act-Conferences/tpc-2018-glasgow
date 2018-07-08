@@ -49,7 +49,7 @@
         [% END %]
         [% IF t.url_abstract || t.url_talk %]][% END %]
       </td>
-      <td nowrap="nowrap">[% IF t.lightning %]
+      <td class="nowrap">[% IF t.lightning %]
           {{lightning}}
         [% ELSE %]
          [% t.duration %] {{minutes}}
@@ -59,10 +59,10 @@
       <td>[% global.config.talks_languages.${t.lang} %]</td>
     [% END %]
     [% IF global.request.user.is_talks_admin OR global.config.talks_show_schedule %]
-      <td align="center" nowrap="nowrap">[% IF t.datetime; date_format(t.datetime, 'datetime_short'); ELSE; '&nbsp;'; END %]</td>
+      <td class="text-center nowrap">[% IF t.datetime; date_format(t.datetime, 'datetime_short'); ELSE; '&nbsp;'; END %]</td>
     [% END %]
     [% IF global.request.user.is_talks_admin %]
-      <td align="center">
+      <td class="text-center">
         <input type="checkbox" name="[% t.talk_id %]"[% ' checked' IF t.accepted %] />
       </td>
     [% END %]

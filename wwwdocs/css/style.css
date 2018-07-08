@@ -228,3 +228,7 @@ table.user {
 .tpc-sponsor-title {
 	color: cyan;
 }
+
+td.nowrap {
+  white-space: nowrap;
+}
