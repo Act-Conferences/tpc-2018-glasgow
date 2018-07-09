@@ -2,7 +2,7 @@
    IF global.request.args.show;
      title = title _ ': ' _ global.request.args.show.lower.ucfirst;
    END -%]
-[% WRAPPER ui title = 'Statistics' %]
+[% WRAPPER ui title = title %]
 
 <p>
  [% loc('There are n registered people', stats.users, stats.countries.size, stats.pm.size, stats.committed) %]
