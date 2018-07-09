@@ -1,4 +1,8 @@
-[% WRAPPER ui title = 'Statistics' %]
+[% title = 'Statistics';
+   IF global.request.args.show;
+     title = title _ ': ' _ global.request.args.show.lower.ucfirst;
+   END -%]
+[% WRAPPER ui title = title %]
 
 <p>
  [% loc('There are n registered people', stats.users, stats.countries.size, stats.pm.size, stats.committed) %]
@@ -32,14 +36,14 @@
   [% FOREACH c = stats.countries %]
   [% UNLESS count %]<tr>[% END %]
    [% UNLESS stats.towns.${c.iso} %][% NEXT %][% END %]
-   <td><table width="100%">
+   <td><table>
    [% FOREACH t = stats.towns.${c.iso} %]
    [% IF loop.count == 1 %]
     <tr><th colspan="2"><a href="[% make_uri('search', 'country', c.iso) %]">[% c.name %]</a> [% c.count %]&nbsp;([% c.committed %])</th></tr>
    [% END %]
     <tr><td><a href="[% make_uri('search', 'town', t.name, 'country', c.iso) %]">[% t.name %]</a></td><td>[% t.count %]&nbsp;([% t.committed %])</td></tr>
    [% END %]
-   </td></tr></table></td>
+   </table></td>
    [% IF count == cols - 1 %]</tr>[% END %]
    [% count = ( count + 1) % cols %]
   [% END %]
