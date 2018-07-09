@@ -1,3 +1,7 @@
+[% title = 'Statistics';
+   IF global.request.args.show;
+     title = title _ ': ' _ global.request.args.show.lower.ucfirst;
+   END -%]
 [% WRAPPER ui title = 'Statistics' %]
 
 <p>
