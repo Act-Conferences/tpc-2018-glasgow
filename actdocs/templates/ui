@@ -22,6 +22,7 @@ END;
 -%]
 
 <link rel="canonical" href="[% canonical_uri %]">
+[% IF noindex %]<meta name="robots" content="noindex">[% END %]
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Document Metadata -->
 <meta name="twitter:card" content="summary" />
