@@ -28,19 +28,19 @@
     "offers": [{
       "@type": "Offer",
       "description": "Full Conference Ticket",
-      "url": "http://act.perlconference.org/tpc-2018-glasgow/pricing.html",
+      "url": "[% global.config.general_full_uri %]pricing.html",
       "price": "[% global.config.product_registration_price1_amount %]",
       "priceCurrency": "GBP"
     },{
       "@type": "Offer",
       "description": "Business Conference Ticket",
-      "url": "http://act.perlconference.org/tpc-2018-glasgow/pricing.html",
+      "url": "[% global.config.general_full_uri %]pricing.html",
       "price": "[% global.config.product_registration_price2_amount %]",
       "priceCurrency": "GBP"
     },{
       "@type": "Offer",
       "description": "Student Conference Ticket",
-      "url": "http://act.perlconference.org/tpc-2018-glasgow/pricing.html",
+      "url": "[% global.config.general_full_uri %]pricing.html",
       "price": "[% global.config.product_registration_price3_amount %]",
       "priceCurrency": "GBP"
     }]
