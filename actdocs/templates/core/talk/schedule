@@ -7,9 +7,6 @@
 {{The schedule is not ready to be seen.}}
 [% ELSE %]
 [% IF table.keys.size %]
-<p>
-{{Talks in bold type have been confirmed by their respective speakers.}}
-</p>
 [%-# tabs %]
 [% day = global.request.args.day;
    UNLESS day AND table.$day.size;          # no valid day specified
@@ -18,8 +15,17 @@
      UNLESS table.$day.size;                # if not valid default to first day
        day = global.config.talks_schedule_default || table.keys.sort.0;
      END;
-   END;
-   IF table.keys.size > 1;
+   END %]
+[% IF day == '2018-08-13' OR day == '2018-08-14' -%]
+<p>Talks that take place on Monday or Tuesday are workshops that are not
+included in the conference price. You will need to buy an
+<a href="[% make_uri('purchase') %]">extra ticket</a>
+to attend these workshops.</p>
+[% END -%]
+<p>
+{{Talks in bold type have been confirmed by their respective speakers.}}
+</p>
+[% IF table.keys.size > 1;
      FOREACH d IN table.keys.sort;
        date = date_format(d.replace('$', ' 00:00:00'), "%A");
        IF day == d %]
@@ -76,6 +82,7 @@
 [% IF todo.size %]
 <p>
  {{The time and place of the following talks haven't been decided yet.}}
+ {{They could be scheduled for any day of the conference.}}
 </p>
 <table class="table table-striped table-hover table-sm">
 <thead class="thead-light">
