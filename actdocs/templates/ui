@@ -82,6 +82,9 @@ END;
         <h3 class="tpc-sponsor-title">
           Corporate Sponsors
         </h3>
+        <a href="https://www.adestra.com/" target="_blank">
+          <img class="my-1 img-fluid" src="[% make_uri_info('css/logos/adestra.png') %]" alt="adestra logo" title="Customer Driven Email Management"/>
+        </a>
         <a href="http://cpanel.com" target="_blank">
           <img class="my-1 img-fluid" src="[% make_uri_info('css/logos/cpanel3.png') %]" alt="cPanel" title="Complete Web Host Management"/>
         </a>
