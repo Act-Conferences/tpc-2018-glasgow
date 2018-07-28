@@ -115,6 +115,9 @@ END;
         <a href="https://www.stickeryou.com" target="_blank">
           <img class="my-1 img-fluid" src="[% make_uri_info('css/logos/stickeryou.png') %]" alt="StickerYou custom Sticker Sheets" title="StickerYou custom stickers and decals" />
         </a>
+        <a href="https://www.zpg.co.uk/" target="_blank">
+          <img class="my-1 img-fluid" src="[% make_uri_info('css/logos/Zoopla.png') %]" alt="Zoopla Property Management" title="Employ smarter household and property decisions" />
+        </a>
       </div>
       <div class="col-6 text-center">
         <h3 class="tpc-sponsor-title">
