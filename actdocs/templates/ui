@@ -104,7 +104,7 @@ END;
           <img class="my-1 img-fluid" src="[% make_uri_info('css/logos/perlcareers.png') %]" alt="Perl Careers" title="Perl Recrtuitment" />
         </a>
         <a href="https://www.perceptyx.com/" target="_blank">
-          <img class="my-1 img-fluid" src="[% make_uri_info('css/logos/perceptyx.png') %]" alt="Perceptyx Logo" title="Employee Services and People Analytics" />
+          <img class="my-1 img-fluid" src="[% make_uri_info('css/logos/perceptyx.gif') %]" alt="Perceptyx Logo" title="Employee Services and People Analytics" />
         </a>        
         <a href="https://www.perl-services.de/" target="_blank">
           <img class="my-1 img-fluid" src="[% make_uri_info('css/logos/perlservices.png') %]" alt="Perl Services" title="Professional Perl Programming" />
