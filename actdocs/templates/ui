@@ -110,7 +110,7 @@ END;
           <img class="my-1 img-fluid" src="[% make_uri_info('css/logos/perlservices.png') %]" alt="Perl Services" title="Professional Perl Programming" />
         </a>
         <a href="https://www.pirum.com/" target="_blank">
-          <img class="my-1 img-fluid" src="[% make_uri_info('css/logos/pirum2.png') %]" alt="Pirum" title="Global Leaders in Securities Finance Automation" />
+          <img class="my-1 img-fluid" src="[% make_uri_info('css/logos/pirium2.png') %]" alt="Pirium" title="Global Leaders in Securities Finance Automation" />
         </a>
         <a href="https://shadow.cat" target="_blank">
           <img class="my-1 img-fluid" src="[% make_uri_info('css/logos/shadowcat.png') %]" alt="Shadowcat Systems Limited" title="Perl Consultancy with a Clue and a Commit Bit" />
