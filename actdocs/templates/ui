@@ -132,7 +132,7 @@ END;
         <a href="http://enlightenedperl.org/" target="_blank">
           <img class="my-1 img-fluid" src="[% make_uri_info('css/logos/epo.png') %]" alt="Enlightened Perl Organisation" title="Non profit association for Perl promotion" />
         </a>
-        <a href="http://https://mag-sol.com/" target="_blank">
+        <a href="https://mag-sol.com/" target="_blank">
           <img class="my-1 img-fluid" src="[% make_uri_info('css/logos/magnum.png') %]" alt="Magnum Solutions Logo" title="Perl training and professional programmer training" />
         </a>
         <a href="http://perl6.org/" target="_blank">
