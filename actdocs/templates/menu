@@ -6,6 +6,7 @@
   [% PROCESS custom/menus/pricing %]
   [% PROCESS custom/menus/wiki %]
   [% PROCESS custom/menus/news %]
+  [% PROCESS custom/menus/coc %]
   [% PROCESS custom/menus/users %]
   [% PROCESS custom/menus/user %]
 </ul>
