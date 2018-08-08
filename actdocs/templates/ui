@@ -68,14 +68,14 @@ END;
         </h1>
         <a href="[% make_uri('purchase') %]" class="text-white btn btn-primary btn-large mt-3">Buy Tickets</a>
         <br>
-        <div class="btn-group">
-          <a href="/tpc-2018-glasgow/schedule?day=2018-08-13" class="text-white btn btn-warning btn-large mt-3">Monday 13th</a>
-          <a href="/tpc-2018-glasgow/schedule?day=2018-08-14" class="text-white btn btn-warning btn-large mt-3">Tuesday 14th</a>
+        <div class="btn-toolbar">
+          <a href="/tpc-2018-glasgow/schedule?day=2018-08-13" class="text-white btn btn-warning btn-large mr-2 mt-3">Monday 13th</a>
+          <a href="/tpc-2018-glasgow/schedule?day=2018-08-14" class="text-white btn btn-warning btn-large mr-2 mt-3">Tuesday 14th</a>
         </div>
-        <div class="btn-group">
-          <a href="/tpc-2018-glasgow/schedule?day=2018-08-15" class="text-white btn btn-info btn-large mt-3">Wednesday 15th</a>
-          <a href="/tpc-2018-glasgow/schedule?day=2018-08-16" class="text-white btn btn-info btn-large mt-3">Thursday 16th</a>
-          <a href="/tpc-2018-glasgow/schedule?day=2018-08-17" class="text-white btn btn-info btn-large mt-3">Friday 17th</a>
+        <div class="btn-toolbar">
+          <a href="/tpc-2018-glasgow/schedule?day=2018-08-15" class="text-white btn btn-info btn-large mr-2 mt-3">Wednesday 15th</a>
+          <a href="/tpc-2018-glasgow/schedule?day=2018-08-16" class="text-white btn btn-info btn-large mr-2 mt-3">Thursday 16th</a>
+          <a href="/tpc-2018-glasgow/schedule?day=2018-08-17" class="text-white btn btn-info btn-large mr-2 mt-3">Friday 17th</a>
         </div>
       </div>
 [% ELSE -%]
