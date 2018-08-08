@@ -8,5 +8,6 @@
   [% PROCESS custom/menus/news %]
   [% PROCESS custom/menus/users %]
   [% PROCESS custom/menus/user %]
+  [% PROCESS custom/menus/CofC %]
 </ul>
 [% END %]
