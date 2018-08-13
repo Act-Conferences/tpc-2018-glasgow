@@ -232,3 +232,8 @@ table.user {
 td.nowrap {
   white-space: nowrap;
 }
+
+p.venue {
+  background-color: #ffffff;
+}
+
