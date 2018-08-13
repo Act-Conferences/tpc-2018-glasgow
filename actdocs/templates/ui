@@ -66,6 +66,8 @@ END;
         <h1>
           [% h1 || title %]
         </h1>
+        <h2>The Studio, 67 Hope Street, Glasgow G2 6AE</h2>
+        <p><a href="https://www.google.co.uk/maps/place/thestudio.../@55.8597616,-4.2614273,17z/data=!3m1!4b1!4m5!3m4!1s0x4888469dd65b9e7b:0xd155f90798decf22!8m2!3d55.8597616!4d-4.2592386">Map</a></p>
         <a href="[% make_uri('purchase') %]" class="text-white btn btn-primary btn-large mt-3">Buy Tickets</a>
         <br>
         <div class="btn-toolbar">
